@@ -1,0 +1,21 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Poster from './Poster.astro';
+import { orderedSessions, accessLabel, statusLabel } from '../lib/catalog';
+import { formatDate, searchKey } from '../lib/dates.mjs';
+const { event, referenceDay }: { event: CollectionEntry<'events'>; referenceDay: string } = Astro.props;
+const info = event.data;
+const dates = orderedSessions(event).map(session => session.date);
+const initial = dates.find(date => date >= referenceDay) ?? dates.at(-1)!;
+---
+<article class="event-card" data-event data-dates={dates.join(',')} data-category={info.category} data-access={info.access} data-search={searchKey([info.title, info.venue, ...info.artists].join(' '))}>
+  <a class="card-link" href={`/agenda/${event.id}/`}>
+    <Poster art={info.category} />
+    <div class="card-body">
+      <div class="card-meta"><span>{info.category}</span><time data-event-date datetime={initial}>{formatDate(initial)}</time></div>
+      <h3>{info.title}</h3>
+      <p>{info.venue}</p>
+      <div class="card-bottom"><span class="badge" data-free={info.access === 'free'}>{info.status === 'scheduled' ? info.price ?? accessLabel[info.access] : statusLabel[info.status]}</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+    </div>
+  </a>
+</article>

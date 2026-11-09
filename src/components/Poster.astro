@@ -1,0 +1,37 @@
+---
+const { art } = Astro.props;
+---
+<div class="poster" data-art={art} aria-hidden="true">
+  <svg viewBox="0 0 400 214" preserveAspectRatio="xMidYMid slice" focusable="false">
+    <path d="M0 36H400M0 178H400M39 0V214M361 0V214" stroke="currentColor" opacity=".25" fill="none" />
+    <path d="M29 36h20m-10-10v20m312 132h20m-10-10v20" stroke="currentColor" fill="none" />
+    {art === 'Música' ? (
+      <g fill="none" stroke="currentColor" stroke-width="2">
+        {[24, 38, 52, 66, 80].map(r => <circle cx="198" cy="106" r={r}/>)}
+        <path d="M66 107h46l15-24 22 52 24-73 22 80 23-56 22 34 16-13h78" stroke-width="6" stroke-linejoin="round"/>
+      </g>
+    ) : art === 'Escena' ? (
+      <g fill="currentColor">
+        <path d="M52 26h106v130L52 196zM348 26H242v130l106 40z"/>
+        <path d="M70 27l118 0 40 145h-86zM330 27H212l-40 145h86z" opacity=".22"/>
+        <path d="M189 98h22v22h-22zM179 108h42v2h-42zM199 87h2v43h-2z"/>
+      </g>
+    ) : art === 'Cine' ? (
+      <g fill="none" stroke="currentColor" stroke-width="3">
+        <rect x="90" y="50" width="220" height="114" rx="8"/>
+        <path d="M90 72h220M90 142h220M184 87l42 20-42 22z"/>
+        {[110, 140, 170, 200, 230, 260, 290].map(x => <path d={`M${x} 50v22m0 70v22`}/>)}
+      </g>
+    ) : art === 'Patrimonio' ? (
+      <g fill="currentColor">
+        <path d="M67 164h266v12H67zM84 152V98h30V83h35v69zM251 152V83h35v15h30v54zM161 152V73l39-31 39 31v79h-23v-43a16 16 0 0 0-32 0v43z"/>
+        <path d="M122 80V59l10-10 10 10v21zm136 0V59l10-10 10 10v21z"/>
+      </g>
+    ) : (
+      <g fill="currentColor" transform="translate(200 107)">
+        {[0, 45, 90, 135].map(angle => <ellipse rx="91" ry={art === 'Arte' ? 23 : 14} fill="none" stroke="currentColor" stroke-width="6" transform={`rotate(${angle})`} />)}
+        <circle r="11" />
+      </g>
+    )}
+  </svg>
+</div>

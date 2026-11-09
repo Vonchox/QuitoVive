@@ -1,0 +1,40 @@
+---
+import Shell from '../../layouts/Shell.astro';
+import Poster from '../../components/Poster.astro';
+import { eventList, orderedSessions, accessLabel, statusLabel } from '../../lib/catalog';
+import { formatDate } from '../../lib/dates.mjs';
+export async function getStaticPaths() {
+  return (await eventList()).map(event => ({ params: { id: event.id }, props: { event } }));
+}
+const { event } = Astro.props;
+const info = event.data;
+const sessions = orderedSessions(event);
+---
+<Shell title={`${info.title} | QuitoVive`} description={info.summary} active="agenda">
+  <section class="page-head detail-head">
+    <div class="wrap detail-top">
+      <div><a class="text-link back" href="/agenda/">← Volver a la agenda</a><p class="eyebrow">{info.category} / {statusLabel[info.status]}</p><h1>{info.title}</h1><p>{info.summary}</p></div>
+      <Poster art={info.category} />
+    </div>
+  </section>
+  <div class="wrap section detail-grid">
+    <div class="detail-content">
+      <section><h2>Fechas y horarios</h2><ul class="sessions">
+        {sessions.map(({ date, times }) => <li><time datetime={date}>{formatDate(date)}</time><span>{times.length ? times.join(' · ') : 'Horario por confirmar'}</span></li>)}
+      </ul><p class="muted">Hora local de Quito.</p></section>
+      <section><h2>Quién participa</h2>{info.artists.length ? <ul class="artist-list">{info.artists.map(artist => <li>{artist}</li>)}</ul> : <p>La fuente no publica un listado de participantes.</p>}</section>
+    </div>
+    <aside class="info-box" aria-labelledby="info-title">
+      <h2 id="info-title">Antes de ir</h2>
+      <dl>
+        <dt>Lugar</dt><dd>{info.venue} · Quito <a class="text-link" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(info.venue + ', Quito')}`}>Cómo llegar ↗</a></dd>
+        <dt>Organiza</dt><dd>{info.organizer}</dd>
+        <dt>Entrada</dt><dd>{info.price ?? accessLabel[info.access]}{info.accessNote && <p>{info.accessNote}</p>}</dd>
+        <dt>Aforo</dt><dd>{info.capacity ? `${info.capacity} personas` : 'Aforo no publicado'}</dd>
+        {info.accessibility && <><dt>Accesibilidad</dt><dd>{info.accessibility}</dd></>}
+      </dl>
+      {info.tickets && info.status === 'scheduled' && <a class="button" href={info.tickets}>Consultar entradas <span aria-hidden="true">↗</span></a>}
+      <p class="source-note"><a class="text-link" href={info.source.url}>{info.source.name} ↗</a><small>Verificado el <time datetime={info.source.checked}>{formatDate(info.source.checked)}</time>.</small></p>
+    </aside>
+  </div>
+</Shell>

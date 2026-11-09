@@ -1,0 +1,15 @@
+---
+import Shell from '../layouts/Shell.astro';
+import { eventList } from '../lib/catalog';
+const sources = [...new Map((await eventList()).map(({ data }) => [data.source.url, data.source])).values()];
+---
+<Shell title="Fuentes y criterio editorial | QuitoVive">
+  <section class="page-head"><div class="wrap"><p class="eyebrow">03 / CRITERIO EDITORIAL</p><h1>Fuentes<span>.</span></h1><p>De dónde sale la información de la agenda y cómo la revisamos.</p></div></section>
+  <div class="wrap section"><div class="prose">
+    <h2>Cómo seleccionamos los eventos</h2>
+    <p>QuitoVive es una guía independiente. Priorizamos la programación publicada por espacios y organizadores, y también consultamos coberturas que identifican su fuente. Cada ficha enlaza al material consultado y muestra la fecha de revisión.</p>
+    <p>La agenda se actualiza de forma editorial. Para cambios de última hora, reservas y disponibilidad, consulta el enlace de la ficha. Publicamos el aforo cuando la fuente especifica la capacidad del evento.</p>
+    <h2>Fuentes del catálogo</h2>
+    <ul>{sources.map(source => <li><a href={source.url}>{source.name} ↗</a></li>)}</ul>
+  </div></div>
+</Shell>

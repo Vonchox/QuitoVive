@@ -1,0 +1,453 @@
+[
+  {
+    "id": "las-reinas-indias",
+    "title": "Las Reinas Indias, semiópera sudaca",
+    "category": "Escena",
+    "summary": "Una relectura contemporánea de la ópera barroca The Indian Queen que pone en escena la defensa del agua y del territorio.",
+    "venue": "Teatro Nacional Sucre",
+    "organizer": "Fundación Teatro Nacional Sucre",
+    "sessions": [
+      {
+        "date": "2026-11-12",
+        "times": [
+          "19:00"
+        ]
+      },
+      {
+        "date": "2026-11-13",
+        "times": [
+          "19:00"
+        ]
+      },
+      {
+        "date": "2026-11-14",
+        "times": [
+          "19:00"
+        ]
+      }
+    ],
+    "access": "paid",
+    "price": "USD 15",
+    "artists": [
+      "Colectiva Yama",
+      "Theater Aachen",
+      "Fundación InConcerto"
+    ],
+    "tickets": "https://tickets.teatrosucre.com",
+    "featured": true,
+    "source": {
+      "name": "Quito Informa · Aniversario del Teatro Sucre",
+      "url": "https://quitoinforma.quito.gob.ec/2026/11/06/vamos-todos-a-celebrar-los-140-anos-del-teatro-nacional-sucre/",
+      "checked": "2026-11-08"
+    }
+  },
+  {
+    "id": "tejidos-y-tramas",
+    "title": "Tejidos y tramas",
+    "category": "Talleres",
+    "summary": "Un espacio de encuentro para compartir saberes del tejido y conversar sobre género.",
+    "venue": "Museo de la Ciudad",
+    "organizer": "Fundación Museos de la Ciudad",
+    "sessions": [
+      {
+        "date": "2026-11-14",
+        "times": [
+          "11:00"
+        ]
+      },
+      {
+        "date": "2026-11-28",
+        "times": [
+          "11:00"
+        ]
+      }
+    ],
+    "access": "free",
+    "artists": [],
+    "featured": true,
+    "source": {
+      "name": "Museo de la Ciudad · Agenda de noviembre",
+      "url": "https://fundacionmuseosquito.gob.ec/Agendas%20PDF/2026/Noviembre/mdc_agenda_nov_compressed.pdf",
+      "checked": "2026-11-08"
+    }
+  },
+  {
+    "id": "el-teatro-esta-vivo",
+    "title": "El teatro está vivo",
+    "category": "Música",
+    "summary": "Un concierto visual por los 140 años del Sucre que reúne a sus elencos, artistas invitados y equipos técnicos.",
+    "venue": "Teatro Nacional Sucre",
+    "organizer": "Fundación Teatro Nacional Sucre",
+    "sessions": [
+      {
+        "date": "2026-11-19",
+        "times": []
+      }
+    ],
+    "access": "unknown",
+    "artists": [
+      "Orquesta de Instrumentos Andinos",
+      "Ensamble Guitarras de Quito",
+      "Coro Mixto Ciudad de Quito",
+      "Paola Navarrete",
+      "Black Mama",
+      "Gabriela Cobo",
+      "Coro Infantil",
+      "Grupo Yavirac",
+      "Daniel Pacheco",
+      "Dayané",
+      "Nicolás Dávila",
+      "Andrés Noboa",
+      "Grecia Albán",
+      "Ilyari Derks",
+      "Iraiz Oviedo"
+    ],
+    "tickets": "https://tickets.teatrosucre.com",
+    "featured": true,
+    "source": {
+      "name": "Quito Informa · Aniversario del Teatro Sucre",
+      "url": "https://quitoinforma.quito.gob.ec/2026/11/06/vamos-todos-a-celebrar-los-140-anos-del-teatro-nacional-sucre/",
+      "checked": "2026-11-08"
+    }
+  },
+  {
+    "id": "los-secretos-de-la-reserva",
+    "title": "Los secretos de la reserva",
+    "category": "Patrimonio",
+    "summary": "Una visita mediada para descubrir qué guarda el museo y cómo cuida sus colecciones.",
+    "venue": "Museo de la Ciudad",
+    "organizer": "Fundación Museos de la Ciudad",
+    "sessions": [
+      {
+        "date": "2026-11-11",
+        "times": [
+          "10:00",
+          "15:00"
+        ]
+      }
+    ],
+    "access": "paid",
+    "price": "Incluido con la entrada al museo",
+    "artists": [],
+    "tickets": "https://tienda.fundacionmuseosquito.gob.ec",
+    "source": {
+      "name": "Museo de la Ciudad · Agenda de noviembre",
+      "url": "https://fundacionmuseosquito.gob.ec/Agendas%20PDF/2026/Noviembre/mdc_agenda_nov_compressed.pdf",
+      "checked": "2026-11-08"
+    }
+  },
+  {
+    "id": "resonancias",
+    "title": "Resonancias",
+    "category": "Talleres",
+    "summary": "Segundo encuentro de divulgación científica del Museo Interactivo de Ciencia.",
+    "venue": "Museo Interactivo de Ciencia",
+    "organizer": "Fundación Museos de la Ciudad",
+    "sessions": [
+      {
+        "date": "2026-11-12",
+        "times": [
+          "08:00"
+        ]
+      },
+      {
+        "date": "2026-11-13",
+        "times": [
+          "08:00"
+        ]
+      }
+    ],
+    "access": "free",
+    "artists": [],
+    "accessNote": "Requiere inscripción previa. Consulta el proceso con el museo.",
+    "source": {
+      "name": "Fundación Museos de la Ciudad · Agenda de noviembre",
+      "url": "https://fundacionmuseosquito.gob.ec/Agendas%20PDF/2026/Noviembre/AgendaFMC_Nov_.pdf",
+      "checked": "2026-11-08"
+    }
+  },
+  {
+    "id": "polinizadores-de-la-tierra",
+    "title": "Polinizadores de la tierra",
+    "category": "Talleres",
+    "summary": "Una actividad de la exposición Asilvestrados para explorar el papel de los polinizadores.",
+    "venue": "Museo de la Ciudad",
+    "organizer": "Fundación Museos de la Ciudad",
+    "sessions": [
+      {
+        "date": "2026-11-14",
+        "times": [
+          "11:30"
+        ]
+      }
+    ],
+    "access": "paid",
+    "price": "Incluido con la entrada al museo",
+    "artists": [],
+    "tickets": "https://tienda.fundacionmuseosquito.gob.ec",
+    "source": {
+      "name": "Museo de la Ciudad · Agenda de noviembre",
+      "url": "https://fundacionmuseosquito.gob.ec/Agendas%20PDF/2026/Noviembre/mdc_agenda_nov_compressed.pdf",
+      "checked": "2026-11-08"
+    }
+  },
+  {
+    "id": "un-jardin-que-quiere-ser-pajaro",
+    "title": "Un jardín que quiere ser pájaro",
+    "category": "Arte",
+    "summary": "Inauguración de una exposición en el Centro de Arte Contemporáneo.",
+    "venue": "Centro de Arte Contemporáneo",
+    "organizer": "Fundación Museos de la Ciudad",
+    "sessions": [
+      {
+        "date": "2026-11-18",
+        "times": [
+          "19:00"
+        ]
+      }
+    ],
+    "access": "free",
+    "artists": [],
+    "source": {
+      "name": "Fundación Museos de la Ciudad · Agenda de noviembre",
+      "url": "https://fundacionmuseosquito.gob.ec/Agendas%20PDF/2026/Noviembre/AgendaFMC_Nov_.pdf",
+      "checked": "2026-11-08"
+    }
+  },
+  {
+    "id": "la-puerta-de-los-tiempos",
+    "title": "La puerta de los tiempos",
+    "category": "Patrimonio",
+    "summary": "Una visita con audioguía para recorrer la memoria del Teatro Sucre y su entorno.",
+    "venue": "Teatro Nacional Sucre",
+    "organizer": "Fundación Teatro Nacional Sucre",
+    "sessions": [
+      {
+        "date": "2026-11-18",
+        "times": [
+          "12:00",
+          "14:00"
+        ]
+      },
+      {
+        "date": "2026-11-19",
+        "times": [
+          "10:00",
+          "12:00"
+        ]
+      },
+      {
+        "date": "2026-11-20",
+        "times": [
+          "10:00",
+          "12:00"
+        ]
+      },
+      {
+        "date": "2026-11-22",
+        "times": [
+          "10:00",
+          "12:00",
+          "14:00"
+        ]
+      }
+    ],
+    "access": "unknown",
+    "artists": [],
+    "tickets": "https://tickets.teatrosucre.com",
+    "source": {
+      "name": "Quito Informa · Aniversario del Teatro Sucre",
+      "url": "https://quitoinforma.quito.gob.ec/2026/11/06/vamos-todos-a-celebrar-los-140-anos-del-teatro-nacional-sucre/",
+      "checked": "2026-11-08"
+    }
+  },
+  {
+    "id": "el-castigo-a-los-poetas",
+    "title": "El castigo a los poetas",
+    "category": "Escena",
+    "summary": "Una ópera cómica que usa la sátira para hacer del propio teatro el centro de la acción.",
+    "venue": "Teatro Nacional Sucre",
+    "organizer": "Fundación Teatro Nacional Sucre",
+    "sessions": [
+      {
+        "date": "2026-11-19",
+        "times": []
+      },
+      {
+        "date": "2026-11-20",
+        "times": []
+      }
+    ],
+    "access": "unknown",
+    "artists": [
+      "Javier Andrade Córdova",
+      "Marcelo Beltrán"
+    ],
+    "tickets": "https://tickets.teatrosucre.com",
+    "source": {
+      "name": "Quito Informa · Aniversario del Teatro Sucre",
+      "url": "https://quitoinforma.quito.gob.ec/2026/11/06/vamos-todos-a-celebrar-los-140-anos-del-teatro-nacional-sucre/",
+      "checked": "2026-11-08"
+    }
+  },
+  {
+    "id": "entre-ecos-y-espiritus",
+    "title": "Entre ecos y espíritus",
+    "category": "Patrimonio",
+    "summary": "Un recorrido teatralizado por el Museo de la Ciudad.",
+    "venue": "Museo de la Ciudad",
+    "organizer": "Fundación Museos de la Ciudad",
+    "sessions": [
+      {
+        "date": "2026-11-21",
+        "times": [
+          "18:00"
+        ]
+      }
+    ],
+    "access": "paid",
+    "price": "USD 8",
+    "artists": [],
+    "tickets": "https://tienda.fundacionmuseosquito.gob.ec",
+    "source": {
+      "name": "Museo de la Ciudad · Agenda de noviembre",
+      "url": "https://fundacionmuseosquito.gob.ec/Agendas%20PDF/2026/Noviembre/mdc_agenda_nov_compressed.pdf",
+      "checked": "2026-11-08"
+    }
+  },
+  {
+    "id": "equis",
+    "title": "Festival de Cine Feminista EQUIS",
+    "category": "Cine",
+    "summary": "Una función del festival EQUIS en Yaku Parque Museo del Agua.",
+    "venue": "Yaku Parque Museo del Agua",
+    "organizer": "Festival EQUIS",
+    "sessions": [
+      {
+        "date": "2026-11-22",
+        "times": [
+          "11:00"
+        ]
+      }
+    ],
+    "access": "free",
+    "artists": [
+      "Festival EQUIS"
+    ],
+    "source": {
+      "name": "Ecuador Chequea · Agenda municipal de noviembre",
+      "url": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/",
+      "checked": "2026-11-08"
+    }
+  },
+  {
+    "id": "curare-25",
+    "title": "Kuntur Apu · 25 años de Curare",
+    "category": "Música",
+    "summary": "Curare celebra un cuarto de siglo de trayectoria con un concierto en el Teatro Nacional Sucre.",
+    "venue": "Teatro Nacional Sucre",
+    "organizer": "Curare",
+    "sessions": [
+      {
+        "date": "2026-11-24",
+        "times": [
+          "19:00"
+        ]
+      }
+    ],
+    "access": "unknown",
+    "artists": [
+      "Curare"
+    ],
+    "tickets": "https://tickets.teatrosucre.com",
+    "source": {
+      "name": "Ecuador Chequea · Agenda municipal de noviembre",
+      "url": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/",
+      "checked": "2026-11-08"
+    }
+  },
+  {
+    "id": "un-dia-como-restaurador",
+    "title": "Un día como restaurador",
+    "category": "Talleres",
+    "summary": "Un taller para acercarse a las prácticas de conservación de las colecciones.",
+    "venue": "Museo de la Ciudad",
+    "organizer": "Fundación Museos de la Ciudad",
+    "sessions": [
+      {
+        "date": "2026-11-25",
+        "times": [
+          "10:00"
+        ]
+      }
+    ],
+    "access": "free",
+    "artists": [],
+    "accessNote": "Cupos limitados. Consulta disponibilidad con el museo.",
+    "source": {
+      "name": "Museo de la Ciudad · Agenda de noviembre",
+      "url": "https://fundacionmuseosquito.gob.ec/Agendas%20PDF/2026/Noviembre/mdc_agenda_nov_compressed.pdf",
+      "checked": "2026-11-08"
+    }
+  },
+  {
+    "id": "origami",
+    "title": "Origami",
+    "category": "Talleres",
+    "summary": "Un taller de plegado de papel junto a la Fundación Arte al Rescate.",
+    "venue": "Museo de la Ciudad",
+    "organizer": "Fundación Museos de la Ciudad",
+    "sessions": [
+      {
+        "date": "2026-11-28",
+        "times": [
+          "15:00",
+          "16:00"
+        ]
+      }
+    ],
+    "access": "free",
+    "artists": [
+      "Fundación Arte al Rescate"
+    ],
+    "accessNote": "Cupos limitados. Consulta disponibilidad con el museo.",
+    "source": {
+      "name": "Museo de la Ciudad · Agenda de noviembre",
+      "url": "https://fundacionmuseosquito.gob.ec/Agendas%20PDF/2026/Noviembre/mdc_agenda_nov_compressed.pdf",
+      "checked": "2026-11-08"
+    }
+  },
+  {
+    "id": "voces-del-chimborazo",
+    "title": "Yaku Cinema: Voces del Chimborazo",
+    "category": "Cine",
+    "summary": "Dos jornadas de proyección en el programa de cine del Museo del Agua.",
+    "venue": "Yaku Parque Museo del Agua",
+    "organizer": "Fundación Museos de la Ciudad",
+    "sessions": [
+      {
+        "date": "2026-11-15",
+        "times": [
+          "11:30",
+          "14:30"
+        ]
+      },
+      {
+        "date": "2026-11-29",
+        "times": [
+          "11:30",
+          "14:30"
+        ]
+      }
+    ],
+    "access": "paid",
+    "price": "USD 4",
+    "artists": [],
+    "tickets": "https://tienda.fundacionmuseosquito.gob.ec",
+    "source": {
+      "name": "Ecuador Chequea · Agenda municipal de noviembre",
+      "url": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/",
+      "checked": "2026-11-08"
+    }
+  }
+]

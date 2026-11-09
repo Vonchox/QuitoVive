@@ -1,0 +1,56 @@
+---
+import Shell from '../layouts/Shell.astro';
+import EventCard from '../components/EventCard.astro';
+import PostCard from '../components/PostCard.astro';
+import { eventList, postList } from '../lib/catalog';
+import { todayInQuito, matchesDate } from '../lib/dates.mjs';
+const [events, posts] = await Promise.all([eventList(), postList()]);
+const today = todayInQuito();
+const upcoming = events.filter(event => event.data.status === 'scheduled' && matchesDate(event.data.sessions.map(session => session.date), 'upcoming', today));
+const featured = [...upcoming.filter(event => event.data.featured), ...upcoming.filter(event => !event.data.featured)].slice(0, 3);
+---
+<Shell title="QuitoVive — ¿Qué hay en Quito?">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="live-dot"></span> LA AGENDA CULTURAL DE QUITO</span>
+        <h1 id="hero-title">¿Qué hay<br />en <em>Quito?</em></h1>
+        <p>Conciertos, exposiciones, cine y teatro. Encuentra tu próximo plan y sal a descubrir la ciudad.</p>
+        <div class="actions">
+          <a class="button" href="/agenda/">Explorar agenda <span aria-hidden="true">↗</span></a>
+          <a class="button secondary" href="/blog/">Leer el blog</a>
+        </div>
+      </div>
+      <svg class="hero-art" viewBox="0 0 565 430" aria-hidden="true" focusable="false">
+        <defs>
+          <pattern id="dots" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M1 1h4v4H1z" fill="#171931" opacity=".46"/></pattern>
+          <pattern id="paper" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M1 1h2v2H1z" fill="#171931" opacity=".30"/></pattern>
+          <path id="ridge" d="M1 302h28v-18h29v-20h27v-20h27v-24h24v-28h27v-26h31v-33h22v-21h34v13h22v21h28v22h20v20h26v-18h20v-27h21v-21h27v23h24v22h25v22h24v24h28v25h25v18h26v102H1z"/>
+        </defs>
+        <path d="M5 359H548M6 110H550M105 40v369m357-369v369" stroke="#171931" stroke-dasharray="2 7" opacity=".4"/>
+        <circle cx="295" cy="206" r="150" fill="#efff39"/>
+        <circle cx="295" cy="206" r="150" fill="url(#paper)"/>
+        <path d="M102 122l86-42m-42-23 6 92" fill="none" stroke="#9563f1" stroke-width="19" stroke-linecap="round"/>
+        <path d="M491 48h13v13h-13zm22 22h13v13h-13zm-45 1h13v13h-13zm23 22h13v13h-13zm45 0h13v13h-13zm0-45h13v13h-13z" fill="#9563f1"/>
+        <use href="#ridge" fill="#ad8af6" stroke="#171931" stroke-width="2"/>
+        <use href="#ridge" fill="url(#dots)"/>
+        <path d="M43 334h36v-19h42v-16h32v-21h36v-15h38v-22h19v24h27v20h36v17h32v-17h39v-21h30v14h35v16h33v23h40v41H43z" fill="#212343"/>
+        <path d="M156 358v-29h11v-18h10v18h10v29m15 0v-47h14v-21h10v21h15v47m12 0v-30h16v-17h10v17h13v30m35 0v-42h10v-15h10v15h10v42m16 0v-28h27v28" stroke="#eaff32" stroke-width="2" fill="none"/>
+        <path d="M48 379h35m-18-17v34m444-23h34m-17-17v34" stroke="#171931" stroke-width="2"/>
+        <text x="94" y="394" fill="#171931" font-size="13" font-family="monospace" font-weight="bold" letter-spacing="3">PICHINCHA / QUITO</text>
+      </svg>
+    </div>
+  </section>
+  <div class="ribbon" aria-hidden="true"><div class="wrap ribbon-inner"><span>MÚSICA</span><b>✳</b><span>ESCENA</span><b>✳</b><span>ARTE</span><b>✳</b><span>CINE</span><b>✳</b><span>TALLERES</span><b>✳</b><span>PATRIMONIO</span></div></div>
+  <section class="wrap section">
+    <div class="section-head"><div><p class="eyebrow">01 / AGENDA</p><h2>Planes destacados</h2></div><a class="text-link" href="/agenda/">Ver toda la agenda <span aria-hidden="true">↗</span></a></div>
+    {featured.length ? <div class="cards">{featured.map(event => <EventCard event={event} referenceDay={today} />)}</div> :
+      <p class="empty">La próxima selección está por publicarse. <a href="/agenda/?fecha=pasados">Ver eventos anteriores.</a></p>}
+  </section>
+  <section class="blog-band">
+    <div class="wrap section">
+      <div class="section-head"><div><p class="eyebrow">02 / BLOG</p><h2>Quito en palabras</h2></div><a class="text-link" href="/blog/">Ver todas las notas <span aria-hidden="true">↗</span></a></div>
+      <div class="cards">{posts.map(post => <PostCard post={post} />)}</div>
+    </div>
+  </section>
+</Shell>

@@ -1,0 +1,41 @@
+---
+import '../styles/global.css';
+const { title, description = 'Descubre eventos culturales, artistas y espacios de Quito.', active } = Astro.props;
+const canonical = Astro.site && new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="es-EC">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#a5e9f5" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    {canonical && <link rel="canonical" href={canonical} />}
+    <link rel="icon" href="/marca.svg" type="image/svg+xml" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+    <div class="topline"><span>◆</span> GUÍA CULTURAL INDEPENDIENTE <span class="top-divider">/</span> QUITO, EC</div>
+    <header class="site-header">
+      <div class="wrap nav-inner">
+        <a class="brand" href="/" aria-label="QuitoVive, inicio"><img src="/marca.svg" width="29" height="29" alt="" /> Quito<span>Vive</span></a>
+        <nav aria-label="Principal">
+          <a href="/agenda/" aria-current={active === 'agenda' ? 'page' : undefined}>Agenda</a>
+          <a href="/blog/" aria-current={active === 'blog' ? 'page' : undefined}>Blog</a>
+        </nav>
+        <a class="button nav-cta" href="/agenda/?fecha=finde">Planes del finde <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+    <main id="contenido"><slot /></main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div><a class="brand" href="/"><img src="/marca.svg" width="29" height="29" alt="" /> Quito<span>Vive</span></a><p>Cultura a la vuelta de la esquina.</p></div>
+        <nav aria-label="Pie de página"><a href="/agenda/">Agenda</a><a href="/blog/">Blog</a><a href="/fuentes/">Fuentes</a></nav>
+        <small>HECHO PARA QUITO, ECUADOR <span aria-hidden="true">✳</span></small>
+      </div>
+    </footer>
+  </body>
+</html>

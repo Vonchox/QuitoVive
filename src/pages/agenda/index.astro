@@ -1,0 +1,88 @@
+---
+import Shell from '../../layouts/Shell.astro';
+import EventCard from '../../components/EventCard.astro';
+import { eventList, categories } from '../../lib/catalog';
+import { todayInQuito } from '../../lib/dates.mjs';
+const events = await eventList();
+const today = todayInQuito();
+---
+<Shell title="Agenda cultural de Quito | QuitoVive" active="agenda">
+  <section class="page-head"><div class="wrap"><p class="eyebrow">01 / ENCUENTRA TU PLAN</p><h1>Agenda cultural<span>.</span></h1><p>Lo que pasa en Quito, con información de quienes lo organizan y fuentes que puedes consultar.</p></div></section>
+  <section class="wrap section agenda-section" aria-label="Eventos">
+    <form id="filters" class="filters" hidden>
+      <label class="search-field">Buscar<input type="search" name="q" placeholder="Evento, artista o lugar" /></label>
+      <label>Fecha<select name="fecha"><option value="proximos">Próximos</option><option value="hoy">Hoy</option><option value="finde">Este fin de semana</option><option value="pasados">Pasados</option><option value="todos">Todas las fechas</option></select></label>
+      <label>Categoría<select name="categoria"><option value="">Todas</option>{categories.map(category => <option value={category}>{category}</option>)}</select></label>
+      <label class="check"><input type="checkbox" name="gratis" value="1" /> Solo gratis</label>
+      <button class="clear" type="reset">Limpiar filtros</button>
+    </form>
+    <noscript><p>Se muestran todos los eventos. Activa JavaScript para filtrar la agenda.</p></noscript>
+    <div class="results-head"><h2>Eventos</h2><p id="count" aria-live="polite"></p></div>
+    <p class="empty" id="empty" hidden>No encontramos eventos con estos filtros. Prueba con otras fechas o categorías.</p>
+    <div class="cards" id="event-grid">{events.map(event => <EventCard event={event} referenceDay={today} />)}</div>
+  </section>
+</Shell>
+
+<script>
+  import { todayInQuito, matchesDate, formatDate, searchKey } from '../../lib/dates.mjs';
+  const form = document.querySelector<HTMLFormElement>('#filters')!;
+  const grid = document.querySelector('#event-grid')!;
+  const cards = [...grid.querySelectorAll<HTMLElement>('[data-event]')];
+  const count = document.querySelector('#count')!;
+  const empty = document.querySelector<HTMLElement>('#empty')!;
+  const query = form.querySelector<HTMLInputElement>('[name=q]')!;
+  const date = form.querySelector<HTMLSelectElement>('[name=fecha]')!;
+  const category = form.querySelector<HTMLSelectElement>('[name=categoria]')!;
+  const free = form.querySelector<HTMLInputElement>('[name=gratis]')!;
+  const dates = { proximos: 'upcoming', hoy: 'today', finde: 'weekend', pasados: 'past', todos: 'all' };
+
+  function readUrl() {
+    const params = new URLSearchParams(location.search);
+    query.value = params.get('q') ?? '';
+    date.value = params.get('fecha') ?? 'proximos';
+    if (!date.value) date.value = 'proximos';
+    category.value = params.get('categoria') ?? '';
+    if (category.selectedIndex < 0) category.value = '';
+    free.checked = params.get('gratis') === '1';
+  }
+
+  function update(save: boolean) {
+    const today = todayInQuito();
+    const filter = dates[date.value as keyof typeof dates];
+    const words = searchKey(query.value).trim().split(/\s+/);
+    const visible = [];
+    for (const card of cards) {
+      const sessions = card.dataset.dates!.split(',');
+      const matches = matchesDate(sessions, filter, today)
+        && (!category.value || card.dataset.category === category.value)
+        && (!free.checked || card.dataset.access === 'free')
+        && words.every(word => card.dataset.search!.includes(word));
+      card.hidden = !matches;
+      if (!matches) continue;
+      const display = (filter === 'past' ? sessions.at(-1) : sessions.find(session => matchesDate([session], filter, today))) ?? sessions[0];
+      const time = card.querySelector<HTMLTimeElement>('[data-event-date]')!;
+      time.dateTime = display;
+      time.textContent = formatDate(display);
+      visible.push({ card, display });
+    }
+    visible.sort((a, b) => (filter === 'past' ? -1 : 1) * a.display.localeCompare(b.display));
+    for (const { card } of visible) grid.append(card);
+    count.textContent = visible.length === 1 ? '1 evento' : `${visible.length} eventos`;
+    empty.hidden = visible.length !== 0;
+    if (!save) return;
+    const params = new URLSearchParams();
+    if (query.value.trim()) params.set('q', query.value.trim());
+    if (date.value !== 'proximos') params.set('fecha', date.value);
+    if (category.value) params.set('categoria', category.value);
+    if (free.checked) params.set('gratis', '1');
+    history.replaceState(null, '', location.pathname + (params.size ? '?' + params : ''));
+  }
+
+  readUrl();
+  update(false);
+  form.hidden = false;
+  form.addEventListener('input', () => update(true));
+  form.addEventListener('submit', event => event.preventDefault());
+  form.addEventListener('reset', () => queueMicrotask(() => update(true)));
+  window.addEventListener('popstate', () => { readUrl(); update(false); });
+</script>
