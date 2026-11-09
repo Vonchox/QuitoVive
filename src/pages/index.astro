@@ -1,4 +1,5 @@
 ---
+import { sitePath } from '../lib/paths';
 import Shell from '../layouts/Shell.astro';
 import EventCard from '../components/EventCard.astro';
 import PostCard from '../components/PostCard.astro';
@@ -17,8 +18,8 @@ const featured = [...upcoming.filter(event => event.data.featured), ...upcoming.
         <h1 id="hero-title">¿Qué hay<br />en <em>Quito?</em></h1>
         <p>Conciertos, exposiciones, cine y teatro. Encuentra tu próximo plan y sal a descubrir la ciudad.</p>
         <div class="actions">
-          <a class="button" href="/agenda/">Explorar agenda <span aria-hidden="true">↗</span></a>
-          <a class="button secondary" href="/blog/">Leer el blog</a>
+          <a class="button" href={sitePath('agenda/')}>Explorar agenda <span aria-hidden="true">↗</span></a>
+          <a class="button secondary" href={sitePath('blog/')}>Leer el blog</a>
         </div>
       </div>
       <svg class="hero-art" viewBox="0 0 565 430" aria-hidden="true" focusable="false">
@@ -43,13 +44,13 @@ const featured = [...upcoming.filter(event => event.data.featured), ...upcoming.
   </section>
   <div class="ribbon" aria-hidden="true"><div class="wrap ribbon-inner"><span>MÚSICA</span><b>✳</b><span>ESCENA</span><b>✳</b><span>ARTE</span><b>✳</b><span>CINE</span><b>✳</b><span>TALLERES</span><b>✳</b><span>PATRIMONIO</span></div></div>
   <section class="wrap section">
-    <div class="section-head"><div><p class="eyebrow">01 / AGENDA</p><h2>Planes destacados</h2></div><a class="text-link" href="/agenda/">Ver toda la agenda <span aria-hidden="true">↗</span></a></div>
+    <div class="section-head"><div><p class="eyebrow">01 / AGENDA</p><h2>Planes destacados</h2></div><a class="text-link" href={sitePath('agenda/')}>Ver toda la agenda <span aria-hidden="true">↗</span></a></div>
     {featured.length ? <div class="cards">{featured.map(event => <EventCard event={event} referenceDay={today} />)}</div> :
-      <p class="empty">La próxima selección está por publicarse. <a href="/agenda/?fecha=pasados">Ver eventos anteriores.</a></p>}
+      <p class="empty">La próxima selección está por publicarse. <a href={sitePath('agenda/?fecha=pasados')}>Ver eventos anteriores.</a></p>}
   </section>
   <section class="blog-band">
     <div class="wrap section">
-      <div class="section-head"><div><p class="eyebrow">02 / BLOG</p><h2>Quito en palabras</h2></div><a class="text-link" href="/blog/">Ver todas las notas <span aria-hidden="true">↗</span></a></div>
+      <div class="section-head"><div><p class="eyebrow">02 / BLOG</p><h2>Quito en palabras</h2></div><a class="text-link" href={sitePath('blog/')}>Ver todas las notas <span aria-hidden="true">↗</span></a></div>
       <div class="cards">{posts.map(post => <PostCard post={post} />)}</div>
     </div>
   </section>

@@ -1,6 +1,7 @@
 ---
+import { sitePath } from '../lib/paths';
 import Shell from '../layouts/Shell.astro';
 ---
 <Shell title="Página no encontrada | QuitoVive">
-  <section class="page-head"><div class="wrap"><p class="eyebrow">404</p><h1>Esta página se perdió<span>.</span></h1><p>La agenda sigue aquí para ayudarte a encontrar un plan.</p><a class="button" href="/agenda/">Volver a la agenda ↗</a></div></section>
+  <section class="page-head"><div class="wrap"><p class="eyebrow">404</p><h1>Esta página se perdió<span>.</span></h1><p>La agenda sigue aquí para ayudarte a encontrar un plan.</p><a class="button" href={sitePath('agenda/')}>Volver a la agenda ↗</a></div></section>
 </Shell>

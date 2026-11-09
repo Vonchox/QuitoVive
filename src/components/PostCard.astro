@@ -1,10 +1,11 @@
 ---
+import { sitePath } from '../lib/paths';
 import type { CollectionEntry } from 'astro:content';
 import Poster from './Poster.astro';
 const { post }: { post: CollectionEntry<'posts'> } = Astro.props;
 ---
 <article class="event-card">
-  <a class="card-link" href={`/blog/${post.id}/`}>
+  <a class="card-link" href={sitePath(`blog/${post.id}/`)}>
     <Poster art={post.data.art} />
     <div class="card-body">
       <div class="card-meta">{post.data.label}</div>

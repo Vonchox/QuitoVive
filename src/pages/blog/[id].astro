@@ -1,4 +1,5 @@
 ---
+import { sitePath } from '../../lib/paths';
 import { render } from 'astro:content';
 import Shell from '../../layouts/Shell.astro';
 import Poster from '../../components/Poster.astro';
@@ -12,7 +13,7 @@ const { Content } = await render(post);
 ---
 <Shell title={`${post.data.title} | QuitoVive`} description={post.data.description} active="blog">
   <section class="page-head detail-head blog-head"><div class="wrap detail-top">
-    <div><a class="text-link back" href="/blog/">← Volver al blog</a><p class="eyebrow">{post.data.label}</p><h1>{post.data.title}</h1><p>{post.data.description}</p></div>
+    <div><a class="text-link back" href={sitePath('blog/')}>← Volver al blog</a><p class="eyebrow">{post.data.label}</p><h1>{post.data.title}</h1><p>{post.data.description}</p></div>
     <Poster art={post.data.art} />
   </div></section>
   <div class="wrap section"><article class="prose"><p class="byline">Redacción QuitoVive · <time datetime={post.data.date}>{formatDate(post.data.date)}</time></p><Content /></article></div>
