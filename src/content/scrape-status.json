@@ -1,7 +1,7 @@
 {
   "lastAttempt": "2026-11-25",
   "lastSuccess": "2026-11-25",
-  "status": "ok",
+  "status": "partial",
   "source": "https://visitquito.ec/es/eventos/",
   "sources": [
     {
@@ -24,13 +24,15 @@
       "id": "teatrosucre",
       "name": "Fundación Teatro Nacional Sucre",
       "url": "https://teatrosucre.com/",
-      "status": "ok",
-      "count": 8,
+      "status": "failed",
+      "count": 0,
       "lastSuccess": "2026-11-25"
     }
   ],
-  "discovered": 34,
+  "discovered": 26,
   "withImages": 19,
   "withDescriptions": 17,
-  "warnings": []
+  "warnings": [
+    "HTTP 403 en https://teatrosucre.com/robots.txt"
+  ]
 }
