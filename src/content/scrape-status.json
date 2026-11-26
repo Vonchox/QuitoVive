@@ -3,18 +3,34 @@
   "lastSuccess": "2026-11-25",
   "status": "ok",
   "source": "https://visitquito.ec/es/eventos/",
-  "discovered": 24,
-  "accepted": 15,
-  "skipped": [
-    "evt-2026-0281",
-    "evt-2026-0284",
-    "evt-2026-0286",
-    "evt-2026-0287",
-    "evt-2026-0288",
-    "evt-2026-0289",
-    "evt-2026-0291",
-    "evt-2026-0294",
-    "evt-2026-0299"
+  "sources": [
+    {
+      "id": "visitquito",
+      "name": "Visit Quito",
+      "url": "https://visitquito.ec/es/eventos/",
+      "status": "ok",
+      "count": 15,
+      "lastSuccess": "2026-11-25"
+    },
+    {
+      "id": "casamusica",
+      "name": "Casa de la Música",
+      "url": "https://www.casadelamusica.ec/programacion",
+      "status": "ok",
+      "count": 11,
+      "lastSuccess": "2026-11-25"
+    },
+    {
+      "id": "teatrosucre",
+      "name": "Fundación Teatro Nacional Sucre",
+      "url": "https://teatrosucre.com/",
+      "status": "ok",
+      "count": 8,
+      "lastSuccess": "2026-11-25"
+    }
   ],
+  "discovered": 34,
+  "withImages": 19,
+  "withDescriptions": 17,
   "warnings": []
 }

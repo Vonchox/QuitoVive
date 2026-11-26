@@ -1,54 +1,18 @@
 import { readFile, writeFile, rename } from 'node:fs/promises';
 import { AGENDA_URL, parseVisitQuito, parsePriceTable, enrichPrice, mergeEvents } from './scrape-lib.mjs';
+import { CASA_URL, SUCRE_URL, parseCasaMusica, sucreEventLinks, parseSucreEvent } from './scrape-sources.mjs';
+import { sourceFetcher } from './fetch-source.mjs';
 import { todayInQuito } from '../src/lib/dates.mjs';
+import { isBookingUrl, isOrganizerUrl, venueWebsite } from '../src/lib/event-links.mjs';
 
 const eventFile = new URL('../src/content/events.json', import.meta.url);
 const statusFile = new URL('../src/content/scrape-status.json', import.meta.url);
-const userAgent = 'QuitoVive/1.0 (+https://github.com/Vonchox/QuitoVive)';
-const cache = new Map();
-
-async function fetchText(url) {
-  const response = await fetch(url, {
-    headers: { 'User-Agent': userAgent, Accept: 'text/html,text/plain' },
-    signal: AbortSignal.timeout(25000),
-    redirect: 'error',
-  });
-  if (!response.ok) throw new Error('HTTP ' + response.status + ' en ' + url);
-  const body = await response.text();
-  if (body.length > 4_000_000) throw new Error('La página supera el tamaño esperado.');
-  return body;
-}
-
-async function allowedHtml(url) {
-  const target = new URL(url);
-  if (!['visitquito.ec', 'ecuadorchequea.com'].includes(target.hostname)) {
-    throw new Error('La fuente no está autorizada en el scraper.');
-  }
-  if (!cache.has(target.origin)) {
-    const robots = await fetchText(target.origin + '/robots.txt');
-    let applies = false;
-    const rules = [];
-    for (const raw of robots.split(/\r?\n/)) {
-      const line = raw.replace(/#.*$/, '').trim();
-      const split = line.indexOf(':');
-      if (split < 0) continue;
-      const field = line.slice(0, split).toLowerCase();
-      const value = line.slice(split + 1).trim();
-      if (field === 'user-agent') {
-        applies = value === '*' || value.toLowerCase() === 'quitovive';
-      } else if (applies && ['allow', 'disallow'].includes(field) && value) {
-        rules.push({ allow: field === 'allow', path: value });
-      }
-    }
-    cache.set(target.origin, rules);
-  }
-  const rules = cache.get(target.origin).filter(rule => {
-    const escaped = rule.path.replace(/[.+?^{}()|[\]\\]/g, '\\$&').replace(/\*/g, '.*');
-    return new RegExp('^' + escaped).test(target.pathname + target.search);
-  }).sort((a, b) => b.path.length - a.path.length || Number(b.allow) - Number(a.allow));
-  if (rules.length && !rules[0].allow) throw new Error('robots.txt excluye ' + url);
-  return fetchText(url);
-}
+const get = sourceFetcher();
+const checked = todayInQuito();
+const warnings = [];
+const sources = [];
+let previous = {};
+try { previous = JSON.parse(await readFile(statusFile, 'utf8')); } catch {}
 
 async function atomicJson(url, value) {
   const temporary = new URL(url.href + '.tmp');
@@ -56,34 +20,78 @@ async function atomicJson(url, value) {
   await rename(temporary, url);
 }
 
-const checked = todayInQuito();
-let previous = {};
-try { previous = JSON.parse(await readFile(statusFile, 'utf8')); } catch {}
-const report = { lastAttempt: checked, lastSuccess: previous.lastSuccess ?? null, status: 'failed', source: AGENDA_URL };
+async function visitEvents() {
+  const result = parseVisitQuito(await get(AGENDA_URL), checked);
+  const pages = [...new Set(result.events.map(event => event.referenceUrl)
+    .filter(url => url?.startsWith('https://ecuadorchequea.com/') && !new URL(url).search))].slice(0, 3);
+  const prices = new Map();
+  for (const url of pages) {
+    try { prices.set(url, await get(url)); } catch (error) { warnings.push(error.message); }
+  }
+  return result.events.map(event => {
+    const html = prices.get(event.referenceUrl);
+    return html ? enrichPrice(event, parsePriceTable(html, event.sessions[0].date), event.referenceUrl) : event;
+  });
+}
+
+async function sucreEvents() {
+  const links = sucreEventLinks(await get(SUCRE_URL), checked);
+  const events = [];
+  for (const url of links) {
+    try { events.push(parseSucreEvent(await get(url), url, checked)); }
+    catch (error) { warnings.push(error.message); }
+  }
+  if (links.length && !events.length) throw new Error('No se pudo consultar ninguna ficha del Teatro Sucre.');
+  return events;
+}
+
+function directActions(event) {
+  const oldLink = event.tickets;
+  return {
+    ...event,
+    tickets: isBookingUrl(oldLink) ? oldLink : undefined,
+    website: isOrganizerUrl(event.website) ? event.website : isOrganizerUrl(oldLink) ? oldLink : venueWebsite(event.venue),
+    referenceUrl: event.referenceUrl ?? (oldLink && !isBookingUrl(oldLink) && !isOrganizerUrl(oldLink) ? oldLink : undefined),
+  };
+}
+
 try {
   const existing = JSON.parse(await readFile(eventFile, 'utf8'));
-  const { events, skipped, total } = parseVisitQuito(await allowedHtml(AGENDA_URL), checked);
-  const pricePages = [...new Set(events.map(event => event.tickets).filter(url =>
-    url?.startsWith('https://ecuadorchequea.com/') && !new URL(url).search))].slice(0, 3);
-  const prices = new Map();
-  const warnings = [];
-  for (const url of pricePages) {
+  const incoming = [];
+  const providers = [
+    { id: 'visitquito', name: 'Visit Quito', url: AGENDA_URL, read: visitEvents },
+    { id: 'casamusica', name: 'Casa de la Música', url: CASA_URL, read: async () => parseCasaMusica(await get(CASA_URL), checked) },
+    { id: 'teatrosucre', name: 'Fundación Teatro Nacional Sucre', url: SUCRE_URL, read: sucreEvents },
+  ];
+  for (const provider of providers) {
+    const prior = previous.sources?.find(source => source.id === provider.id);
     try {
-      const html = await allowedHtml(url);
-      prices.set(url, html);
-    } catch (error) { warnings.push(error.message); }
+      const warningCount = warnings.length;
+      const events = await provider.read();
+      incoming.push(...events);
+      sources.push({ id: provider.id, name: provider.name, url: provider.url, status: warnings.length > warningCount ? 'partial' : 'ok', count: events.length, lastSuccess: checked });
+    } catch (error) {
+      warnings.push(error.message);
+      sources.push({ id: provider.id, name: provider.name, url: provider.url, status: 'failed', count: 0, lastSuccess: prior?.lastSuccess ?? null });
+    }
   }
-  const enriched = events.map(event => {
-    const html = prices.get(event.tickets);
-    return html ? enrichPrice(event, parsePriceTable(html, event.sessions[0].date), event.tickets) : event;
-  });
-  const merged = mergeEvents(existing, enriched);
+  if (sources.every(source => source.status === 'failed')) throw new Error('No respondió ninguna agenda.');
+  const merged = mergeEvents(existing, incoming).map(directActions);
   await atomicJson(eventFile, merged);
-  Object.assign(report, { lastSuccess: checked, status: warnings.length ? 'partial' : 'ok', discovered: total, accepted: events.length, skipped, warnings });
-  await atomicJson(statusFile, report);
-  console.log(`Agenda actualizada: ${events.length} registros leídos, ${merged.length} fichas conservadas.`);
+  await atomicJson(statusFile, {
+    lastAttempt: checked, lastSuccess: checked, status: warnings.length ? 'partial' : 'ok',
+    source: AGENDA_URL, sources, discovered: incoming.length,
+    withImages: merged.filter(event => event.image).length,
+    withDescriptions: merged.filter(event => event.description?.length).length,
+    warnings,
+  });
+  console.log('Agenda actualizada: ' + incoming.length + ' registros leídos, ' + merged.length + ' fichas conservadas.');
+  for (const source of sources) console.log(source.name + ': ' + source.status + ', ' + source.count + ' eventos.');
 } catch (error) {
-  await atomicJson(statusFile, { ...report, message: error.message });
+  await atomicJson(statusFile, {
+    ...previous, lastAttempt: checked, status: 'failed', sources,
+    message: error.message, warnings,
+  });
   console.error('Se conserva el catálogo anterior. ' + error.message);
   process.exitCode = 1;
 }

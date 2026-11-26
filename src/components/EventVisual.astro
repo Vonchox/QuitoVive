@@ -1,0 +1,20 @@
+---
+import Poster from './Poster.astro';
+const { info, eager = false } = Astro.props;
+---
+<div class="event-visual" class:list={{ 'has-event-image': !!info.image }}>
+  <Poster art={info.category} />
+  {info.image && <img class="event-photo" src={info.image.url} alt={info.image.alt} loading={eager ? 'eager' : 'lazy'} decoding="async" referrerpolicy="no-referrer" width="640" height="400" data-event-photo />}
+</div>
+<script>
+  document.addEventListener('astro:page-load', () => {
+    document.querySelectorAll<HTMLImageElement>('[data-event-photo]').forEach(image => {
+      const fallback = () => {
+        image.hidden = true;
+        image.parentElement?.classList.remove('has-event-image');
+      };
+      image.addEventListener('error', fallback, { once: true });
+      if (image.complete && image.naturalWidth === 0) fallback();
+    });
+  });
+</script>

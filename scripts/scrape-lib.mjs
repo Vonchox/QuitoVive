@@ -1,21 +1,22 @@
 import { load } from 'cheerio';
 import { eventSchema } from '../src/lib/event-schema.mjs';
 import { searchKey } from '../src/lib/dates.mjs';
+import { isBookingUrl, isOrganizerUrl, venueWebsite } from '../src/lib/event-links.mjs';
 
 export const AGENDA_URL = 'https://visitquito.ec/es/eventos/';
 
-function plain(value) {
+export function plain(value) {
   return load(String(value ?? ''), null, false).text().replace(/\s+/g, ' ').trim();
 }
 
-function key(value) {
+export function key(value) {
   return searchKey(value).replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
-function categoryFor(item) {
+export function categoryFor(item) {
   const words = key(item.artist + ' ' + item.tour);
   if (/cine|pelicula|documental/.test(words)) return 'Cine';
-  if (/taller|origami|tejido/.test(words)) return 'Talleres';
+  if (/taller|origami|tejido|clase magistral/.test(words)) return 'Talleres';
   if (/exposicion|galeria/.test(words)) return 'Arte';
   if (/danza|ballet|cascanueces|opera|presentacion escenica/.test(words)) return 'Escena';
   if (/concierto|coro |musica|rock|jazz|concierto o tour/.test(words + ' ' + item.category)) return 'Música';
@@ -52,13 +53,15 @@ export function parseVisitQuito(html, checked) {
       summary: plain(item.tour || item.artist).slice(0, 600),
       category: categoryFor(item),
       venue: plain(item.venue),
-      organizer: 'Consultar organizador en la fuente',
+      organizer: 'Por confirmar',
       sessions: [{ date: item.date, times: start ? [start[1].padStart(2, '0') + ':' + start[2]] : [] }],
       artists: [],
       access: 'unknown',
       accessNote: 'Consulta precios, edad de ingreso y disponibilidad en la publicación original.',
       source: { name: 'Visit Quito · Agenda de eventos', url: AGENDA_URL, checked },
-      tickets: typeof item.source === 'string' && item.source.startsWith('https://') ? item.source : undefined,
+      referenceUrl: typeof item.source === 'string' && item.source.startsWith('https://') ? item.source : undefined,
+      tickets: isBookingUrl(item.source) ? item.source : undefined,
+      website: isOrganizerUrl(item.source) ? item.source : venueWebsite(plain(item.venue)),
       imported: 'visitquito',
     });
     events.push({ id: 'visitquito-' + item.id, ...data });
@@ -106,26 +109,43 @@ export function enrichPrice(event, rows, sourceUrl) {
 }
 
 function overlaps(a, b) {
-  const nameA = key(a.title);
-  const nameB = key(b.title);
+  const normalizeName = value => key(value).replace(/^(primera|segunda|tercera|cuarta) funcion\s+/, '').replace(/\s+(primera|segunda|tercera|cuarta) funcion$/, '');
+  const normalizeVenue = value => key(value).replace(/ ernesto alban$/, '').replace(/^teatro sucre$/, 'teatro nacional sucre');
+  const nameA = normalizeName(a.title);
+  const nameB = normalizeName(b.title);
   const sameName = nameA === nameB;
   const sameDetail = a.tickets && a.tickets === b.tickets && /\/(event|evento)\//.test(a.tickets);
   return (sameName || sameDetail)
-    && key(a.venue) === key(b.venue)
-    && a.sessions.some(session => b.sessions.some(other => other.date === session.date));
+    && normalizeVenue(a.venue) === normalizeVenue(b.venue)
+    && a.sessions.some(session => b.sessions.some(other => other.date === session.date
+      && (!session.times.length || !other.times.length || session.times.some(time => other.times.includes(time)))));
 }
 
 export function mergeEvents(existing, incoming) {
-  const manual = existing.filter(event => !event.imported);
-  // Retain earlier events and stable URLs even when upstream removes an entry.
-  const imported = new Map(existing.filter(event => event.imported).map(event => [event.id, event]));
+  const result = [...existing];
+  const rank = event => event.imported === 'visitquito' ? 1 : event.imported ? 2 : 3;
   for (const event of incoming) {
-    if (manual.some(other => overlaps(other, event))) continue;
-    imported.set(event.id, event);
-  }
-  const result = [...manual];
-  for (const event of imported.values()) {
-    if (!result.some(other => overlaps(other, event))) result.push(event);
+    const index = result.findIndex(other => other.id === event.id || other.upstreamIds?.includes(event.id) || overlaps(other, event));
+    if (index < 0) { result.push(event); continue; }
+    const previous = result[index];
+    if (!previous.imported) {
+      // Add official media and actions while preserving editorial text and dates.
+      if (event.contentSource && rank(event) === 2) result[index] = {
+        ...previous,
+        description: previous.description ?? event.description,
+        image: previous.image ?? event.image,
+        tickets: event.tickets ?? previous.tickets,
+        website: event.website ?? previous.website,
+        contentSource: event.contentSource,
+      };
+      continue;
+    }
+    if (rank(previous) > rank(event)) continue;
+    const upstreamIds = [...new Set([...(previous.upstreamIds ?? []), event.id])].filter(id => id !== previous.id);
+    result[index] = {
+      ...previous, ...event, id: previous.id,
+      upstreamIds: upstreamIds.length ? upstreamIds : undefined,
+    };
   }
   const ids = result.map(event => event.id);
   if (new Set(ids).size !== ids.length) throw new Error('Hay IDs duplicados.');

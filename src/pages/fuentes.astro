@@ -3,14 +3,14 @@ import Shell from '../layouts/Shell.astro';
 import { eventList } from '../lib/catalog';
 import scrape from '../content/scrape-status.json';
 import { formatDate } from '../lib/dates.mjs';
-const sources = [...new Map((await eventList()).map(({ data }) => [data.source.url, data.source])).values()];
+const events = await eventList();
 ---
 <Shell title="Fuentes y criterio editorial | QuitoVive">
   <section class="page-head"><div class="wrap"><p class="eyebrow">03 / CRITERIO EDITORIAL</p><h1>Fuentes<span>.</span></h1><p>De dónde sale la información de la agenda y cómo la revisamos.</p></div></section>
   <div class="wrap section"><div class="prose">
     <h2>Cómo seleccionamos los eventos</h2>
     <p>QuitoVive es una guía independiente. Priorizamos la programación publicada por espacios y organizadores, y también consultamos coberturas que identifican su fuente. Cada ficha enlaza al material consultado y muestra la fecha de revisión.</p>
-    <p>La agenda se consulta automáticamente cada jueves por la mañana. Visit Quito aporta fechas, lugares y enlaces a los organizadores. Algunas entradas tienen precios contrastados con las tablas de programación de Ecuador Chequea. Las fichas revisadas editorialmente se conservan junto a las nuevas publicaciones.</p>
+    <p>La agenda se consulta automáticamente cada jueves por la mañana. Visit Quito, Casa de la Música y Fundación Teatro Nacional Sucre aportan programación. Las páginas de los organizadores permiten completar descripciones, afiches y enlaces a sus boleterías. Algunas entradas tienen precios contrastados con las tablas de programación de Ecuador Chequea.</p>
     <div class="source-health">
       <span>Última consulta · {formatDate(scrape.lastAttempt)}</span>
       <span>Última actualización · {scrape.lastSuccess ? formatDate(scrape.lastSuccess) : 'Pendiente'}</span>
@@ -19,7 +19,17 @@ const sources = [...new Map((await eventList()).map(({ data }) => [data.source.u
     <h2>Planes y presupuestos</h2>
     <p>Los planes proponen un encuentro antes del evento y una pausa al salir. Se calculan con fechas de la agenda y el precio publicado por persona. Puedes añadir tu propio extra para comida y transporte. Si falta el precio, el plan indica que está por confirmar.</p>
     <p>Para cambios de última hora, reservas, condiciones de ingreso y disponibilidad, consulta el enlace de la ficha. El aforo se publica cuando la fuente especifica la capacidad del evento.</p>
-    <h2>Fuentes del catálogo</h2>
-    <ul>{sources.map(source => <li><a href={source.url}>{source.name} ↗</a></li>)}</ul>
+    <h2>Agendas consultadas</h2>
+    <ul>{scrape.sources?.map(source => <li><a href={source.url}>{source.name} ↗</a> · {source.status === 'ok' ? 'Consulta correcta' : source.status === 'partial' ? 'Consulta parcial' : 'Conservamos los datos anteriores'}</li>)}</ul>
+    <h2>Datos y créditos por evento</h2>
+    <p>Las descripciones incluyen extractos breves de la información publicada por los organizadores. Los afiches pertenecen a sus respectivos titulares y se muestran con el crédito correspondiente.</p>
+    {events.map(({ id, data }) => <details class="source-event" id={`evento-${id}`}>
+      <summary>{data.title}</summary>
+      <p>Programación · <a href={data.source.url}>{data.source.name} ↗</a></p>
+      {data.contentSource && <p>Descripción y ficha · <a href={data.contentSource.url}>{data.contentSource.name} ↗</a></p>}
+      {data.referenceUrl && <p><a href={data.referenceUrl}>Referencia adicional ↗</a></p>}
+      {data.priceSource && <p><a href={data.priceSource}>Información del precio ↗</a></p>}
+      {data.image && <p>Imagen de {data.image.credit} · <a href={data.image.source}>Publicación original ↗</a></p>}
+    </details>)}
   </div></div>
 </Shell>

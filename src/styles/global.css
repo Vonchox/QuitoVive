@@ -252,6 +252,22 @@ nav a:hover, nav a[aria-current] { text-decoration: underline; text-underline-of
 .budget-help { margin-top: 13px; color: var(--muted); max-width: 85ch; font-size: .85rem; }
 .source-health { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
 .source-health span { background: #eae4fa; border-radius: 4px; padding: 8px 11px; font-size: .78rem; }
+.event-visual { position: relative; aspect-ratio: 400 / 214; overflow: hidden; background: #eae4fa; border-radius: 8px 8px 0 0; }
+.event-visual > .poster { position: absolute; inset: 0; width: 100%; height: 100%; }
+.event-photo { position: relative; width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .35s ease; }
+.card-link:hover .event-photo { transform: scale(1.035); }
+.detail-top .event-visual { width: 100%; min-height: 250px; aspect-ratio: 1; border: 1px solid var(--ink); border-radius: 8px; }
+.detail-top .event-photo { object-fit: contain; }
+.detail-top .event-visual.has-event-image > .poster { visibility: hidden; }
+.detail-top .event-visual .poster { border: none; border-radius: 0; max-width: none; }
+.event-description p + p { margin-top: 14px; }
+.image-credit { color: var(--muted); font-size: .72rem; margin-top: 12px; }
+.source-event { scroll-margin-top: 24px; padding-block: 20px; border-bottom: 1px solid var(--line); }
+.source-event h3 { font-size: 1.3rem; margin-bottom: 10px; }
+.source-event p { font-size: .88rem; }
+.source-event summary { cursor: pointer; font-weight: 700; }
+.source-event[open] summary { margin-bottom: 12px; }
+.card-session-time { display: block; font-family: var(--mono); font-size: .75rem; margin-top: 4px; color: var(--ink); }
 
 @media (max-width: 900px) { .plan-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 650px) {

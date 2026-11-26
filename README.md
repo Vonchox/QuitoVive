@@ -23,9 +23,13 @@ GitHub Actions publica en GitHub Pages cuando cambian el código, el contenido o
 
 El flujo de publicación ejecuta `npm run scrape` cada jueves a las 07:17 de Quito (12:17 UTC), con posible retraso de GitHub Actions. También se puede ejecutar desde **Actions → Publicar QuitoVive → Run workflow**. Tras las pruebas y la compilación, guarda los cambios y despliega en el mismo flujo.
 
-El scraper lee el HTML público de [Visit Quito](https://visitquito.ec/es/eventos/) y extrae los datos de su agenda sin ejecutar JavaScript externo. Consulta robots.txt, usa un agente identificable, limita las solicitudes y valida fechas y URLs. Contrasta precios únicamente en artículos de Ecuador Chequea enlazados por esa agenda y cuyo mes y año coincidan.
+El scraper consulta el HTML público de [Visit Quito](https://visitquito.ec/es/eventos/), [Casa de la Música](https://www.casadelamusica.ec/programacion) y [Fundación Teatro Nacional Sucre](https://teatrosucre.com/). Lee las páginas individuales del Sucre y la programación de Casa de la Música para obtener descripciones, afiches, precios y enlaces de boletería. Consulta robots.txt, se identifica, limita las solicitudes y valida los datos sin ejecutar JavaScript externo.
 
-Las fechas múltiples ambiguas, los registros incompletos y las actividades fuera del catálogo se omiten. Los precios ausentes permanecen pendientes. Se conserva el catálogo anterior si falla la fuente, se protegen las fichas editoriales y se mantienen las URLs de eventos retirados por la fuente. El resultado aparece en `src/content/scrape-status.json` y en **Fuentes**.
+Los botones de las fichas dirigen a una boletería reconocida o a la web oficial del organizador. La procedencia de la programación, los precios y las imágenes se conserva en **Fuentes → Datos y créditos por evento**. Las imágenes se cargan desde el sitio de su titular y vuelven a la ilustración de categoría si fallan. Los extractos descriptivos se limitan a 110 palabras por publicación.
+
+Para Visit Quito, también se contrastan precios en artículos de Ecuador Chequea enlazados por la agenda y cuyo mes y año coincidan. Los rangos de precios permanecen como texto. Solo se calcula un total por persona cuando la tarifa es inequívoca, sumando los cargos de servicio explícitos.
+
+Las fechas múltiples ambiguas, los registros incompletos y las actividades fuera del catálogo se omiten. Los precios ausentes permanecen pendientes. Si falla una agenda, las demás pueden actualizarse conservando los datos anteriores de la fuente que falló. Las fichas editoriales conservan su texto y sus fechas al recibir imágenes o enlaces oficiales. Las funciones con diferentes horarios se mantienen separadas y se conservan las URLs existentes. El resultado aparece en `src/content/scrape-status.json` y en **Fuentes**.
 
 GitHub puede desactivar tareas programadas en repositorios públicos tras 60 días sin actividad. Revisa el flujo si la fecha de última consulta deja de avanzar.
 

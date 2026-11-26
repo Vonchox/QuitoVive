@@ -45,7 +45,7 @@ test('merging preserves editorial changes, older URLs and makes repeated imports
   const manual = { ...incoming, id: 'editorial', imported: undefined, summary: 'Texto revisado', priceAmount: 0, access: 'free' };
   assert.deepEqual(mergeEvents([manual], [incoming]), [manual]);
   const once = mergeEvents([], [incoming]);
-  assert.deepEqual(mergeEvents(once, [incoming]), once);
+  assert.equal(JSON.stringify(mergeEvents(once, [incoming])), JSON.stringify(once));
   assert.deepEqual(mergeEvents(once, []), once);
 });
 

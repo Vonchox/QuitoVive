@@ -1,5 +1,5 @@
 ---
-import Poster from './Poster.astro';
+import EventVisual from './EventVisual.astro';
 import { sitePath } from '../lib/paths';
 import { formatDate } from '../lib/dates.mjs';
 const { plan, hidden = false } = Astro.props;
@@ -8,7 +8,7 @@ const info = event.data;
 ---
 <article class="event-card plan-card" hidden={hidden} data-plan data-date={date} data-times={plan.times.join(',')} data-cost={cost ?? ''}>
   <a class="card-link plan-cover" href={sitePath(`agenda/${event.id}/`)} aria-label={`Ver evento ${info.title}`}>
-    <Poster art={info.category} />
+    <EventVisual info={info} />
     <span class="plan-cover-label">{info.category} <span aria-hidden="true">↗</span></span>
   </a>
   <div class="card-body">

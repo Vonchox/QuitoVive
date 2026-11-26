@@ -40,7 +40,8 @@
       "url": "https://quitoinforma.quito.gob.ec/2026/11/06/vamos-todos-a-celebrar-los-140-anos-del-teatro-nacional-sucre/",
       "checked": "2026-11-08"
     },
-    "priceAmount": 15
+    "priceAmount": 15,
+    "website": "https://teatrosucre.com/"
   },
   {
     "id": "tejidos-y-tramas",
@@ -70,7 +71,8 @@
       "name": "Museo de la Ciudad · Agenda de noviembre",
       "url": "https://fundacionmuseosquito.gob.ec/Agendas%20PDF/2026/Noviembre/mdc_agenda_nov_compressed.pdf",
       "checked": "2026-11-08"
-    }
+    },
+    "website": "https://fundacionmuseosquito.gob.ec/museo-de-la-ciudad/"
   },
   {
     "id": "el-teatro-esta-vivo",
@@ -109,7 +111,8 @@
       "name": "Quito Informa · Aniversario del Teatro Sucre",
       "url": "https://quitoinforma.quito.gob.ec/2026/11/06/vamos-todos-a-celebrar-los-140-anos-del-teatro-nacional-sucre/",
       "checked": "2026-11-08"
-    }
+    },
+    "website": "https://teatrosucre.com/"
   },
   {
     "id": "los-secretos-de-la-reserva",
@@ -135,7 +138,8 @@
       "name": "Museo de la Ciudad · Agenda de noviembre",
       "url": "https://fundacionmuseosquito.gob.ec/Agendas%20PDF/2026/Noviembre/mdc_agenda_nov_compressed.pdf",
       "checked": "2026-11-08"
-    }
+    },
+    "website": "https://fundacionmuseosquito.gob.ec/museo-de-la-ciudad/"
   },
   {
     "id": "resonancias",
@@ -165,7 +169,8 @@
       "name": "Fundación Museos de la Ciudad · Agenda de noviembre",
       "url": "https://fundacionmuseosquito.gob.ec/Agendas%20PDF/2026/Noviembre/AgendaFMC_Nov_.pdf",
       "checked": "2026-11-08"
-    }
+    },
+    "website": "https://fundacionmuseosquito.gob.ec/museo-interactivo-de-ciencia/"
   },
   {
     "id": "polinizadores-de-la-tierra",
@@ -190,7 +195,8 @@
       "name": "Museo de la Ciudad · Agenda de noviembre",
       "url": "https://fundacionmuseosquito.gob.ec/Agendas%20PDF/2026/Noviembre/mdc_agenda_nov_compressed.pdf",
       "checked": "2026-11-08"
-    }
+    },
+    "website": "https://fundacionmuseosquito.gob.ec/museo-de-la-ciudad/"
   },
   {
     "id": "un-jardin-que-quiere-ser-pajaro",
@@ -213,7 +219,8 @@
       "name": "Fundación Museos de la Ciudad · Agenda de noviembre",
       "url": "https://fundacionmuseosquito.gob.ec/Agendas%20PDF/2026/Noviembre/AgendaFMC_Nov_.pdf",
       "checked": "2026-11-08"
-    }
+    },
+    "website": "https://fundacionmuseosquito.gob.ec/centro-de-arte-contemporaneo/"
   },
   {
     "id": "la-puerta-de-los-tiempos",
@@ -260,7 +267,8 @@
       "name": "Quito Informa · Aniversario del Teatro Sucre",
       "url": "https://quitoinforma.quito.gob.ec/2026/11/06/vamos-todos-a-celebrar-los-140-anos-del-teatro-nacional-sucre/",
       "checked": "2026-11-08"
-    }
+    },
+    "website": "https://teatrosucre.com/"
   },
   {
     "id": "el-castigo-a-los-poetas",
@@ -289,7 +297,8 @@
       "name": "Quito Informa · Aniversario del Teatro Sucre",
       "url": "https://quitoinforma.quito.gob.ec/2026/11/06/vamos-todos-a-celebrar-los-140-anos-del-teatro-nacional-sucre/",
       "checked": "2026-11-08"
-    }
+    },
+    "website": "https://teatrosucre.com/"
   },
   {
     "id": "entre-ecos-y-espiritus",
@@ -315,7 +324,8 @@
       "url": "https://fundacionmuseosquito.gob.ec/Agendas%20PDF/2026/Noviembre/mdc_agenda_nov_compressed.pdf",
       "checked": "2026-11-08"
     },
-    "priceAmount": 8
+    "priceAmount": 8,
+    "website": "https://fundacionmuseosquito.gob.ec/museo-de-la-ciudad/"
   },
   {
     "id": "equis",
@@ -340,7 +350,8 @@
       "name": "Ecuador Chequea · Agenda municipal de noviembre",
       "url": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/",
       "checked": "2026-11-08"
-    }
+    },
+    "website": "https://fundacionmuseosquito.gob.ec/yaku-parque-museo-del-agua/"
   },
   {
     "id": "curare-25",
@@ -366,7 +377,8 @@
       "name": "Ecuador Chequea · Agenda municipal de noviembre",
       "url": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/",
       "checked": "2026-11-08"
-    }
+    },
+    "website": "https://teatrosucre.com/"
   },
   {
     "id": "un-dia-como-restaurador",
@@ -390,7 +402,8 @@
       "name": "Museo de la Ciudad · Agenda de noviembre",
       "url": "https://fundacionmuseosquito.gob.ec/Agendas%20PDF/2026/Noviembre/mdc_agenda_nov_compressed.pdf",
       "checked": "2026-11-08"
-    }
+    },
+    "website": "https://fundacionmuseosquito.gob.ec/museo-de-la-ciudad/"
   },
   {
     "id": "origami",
@@ -417,7 +430,8 @@
       "name": "Museo de la Ciudad · Agenda de noviembre",
       "url": "https://fundacionmuseosquito.gob.ec/Agendas%20PDF/2026/Noviembre/mdc_agenda_nov_compressed.pdf",
       "checked": "2026-11-08"
-    }
+    },
+    "website": "https://fundacionmuseosquito.gob.ec/museo-de-la-ciudad/"
   },
   {
     "id": "voces-del-chimborazo",
@@ -451,7 +465,8 @@
       "url": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/",
       "checked": "2026-11-08"
     },
-    "priceAmount": 4
+    "priceAmount": 4,
+    "website": "https://fundacionmuseosquito.gob.ec/yaku-parque-museo-del-agua/"
   },
   {
     "id": "visitquito-evt-2026-0277",
@@ -459,7 +474,7 @@
     "category": "Patrimonio",
     "summary": "Desfile cultural y festivo en el sector de Solanda.",
     "venue": "Solanda",
-    "organizer": "Consultar organizador en la fuente",
+    "organizer": "Por confirmar",
     "sessions": [
       {
         "date": "2026-11-25",
@@ -471,7 +486,6 @@
     "artists": [],
     "access": "free",
     "accessNote": "Gratis",
-    "tickets": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/",
     "source": {
       "name": "Visit Quito · Agenda de eventos",
       "url": "https://visitquito.ec/es/eventos/",
@@ -481,15 +495,16 @@
     "featured": false,
     "imported": "visitquito",
     "priceAmount": 0,
-    "priceSource": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/"
+    "priceSource": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/",
+    "referenceUrl": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/"
   },
   {
     "id": "visitquito-evt-2026-0278",
     "title": "La Torera",
-    "category": "Escena",
-    "summary": "Presentación escénica en el Teatro Variedades.",
-    "venue": "Teatro Variedades Ernesto Albán",
-    "organizer": "Consultar organizador en la fuente",
+    "category": "Arte",
+    "summary": "Arte en Teatro Variedades.",
+    "venue": "Teatro Variedades",
+    "organizer": "Fundación Teatro Nacional Sucre",
     "sessions": [
       {
         "date": "2026-11-26",
@@ -501,18 +516,37 @@
     "artists": [],
     "access": "paid",
     "accessNote": "USD 10",
-    "tickets": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/",
+    "tickets": "https://tickets.teatrosucre.com/ev/la-torera",
     "source": {
-      "name": "Visit Quito · Agenda de eventos",
-      "url": "https://visitquito.ec/es/eventos/",
+      "name": "Fundación Teatro Nacional Sucre",
+      "url": "https://teatrosucre.com/",
       "checked": "2026-11-25"
     },
     "status": "scheduled",
     "featured": false,
-    "imported": "visitquito",
-    "price": "USD 10",
+    "imported": "teatrosucre",
+    "price": "USD 10.00",
     "priceAmount": 10,
-    "priceSource": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/"
+    "priceSource": "https://teatrosucre.com/event/la-torera-2/",
+    "website": "https://teatrosucre.com/event/la-torera-2/",
+    "referenceUrl": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/",
+    "description": [
+      "La Torera es un monólogo que retrata la vida de Anita Bermeo, conocida popularmente como La Torera: un personaje estrafalario, mítico y profundamente arraigado en la memoria de quienes la conocieron, así como de generaciones que crecieron escuchando su leyenda. Amante de su Quito lindo, Anita recorría incansablemente la ciudad desde las seis de la mañana hasta altas horas de la noche, velando porque nada faltara en “su guagüito”. Con frases emblemáticas como “Aquí falta una piedra, aquí falta otra, vengo a cobrar la renta”, tejía su propio dominio urbano, mitad vigilancia, mitad juego y resistencia. A través de diez personajes que habitaron el Quito de antaño, la obra reconstruye…"
+    ],
+    "image": {
+      "url": "https://cdn.teatrosucre.com/wp-content/uploads/2026/10/08122121/c396deee-72ed-4941-aee5-fdf06144618e-1024x581.jpg",
+      "alt": "Afiche de La Torera",
+      "credit": "Fundación Teatro Nacional Sucre",
+      "source": "https://teatrosucre.com/event/la-torera-2/"
+    },
+    "contentSource": {
+      "name": "Fundación Teatro Nacional Sucre",
+      "url": "https://teatrosucre.com/event/la-torera-2/",
+      "checked": "2026-11-25"
+    },
+    "upstreamIds": [
+      "teatrosucre-la-torera-2"
+    ]
   },
   {
     "id": "visitquito-evt-2026-0279",
@@ -520,7 +554,7 @@
     "category": "Arte",
     "summary": "Encuentro artístico y cultural en el Centro Cultural Metropolitano.",
     "venue": "Centro Cultural Metropolitano",
-    "organizer": "Consultar organizador en la fuente",
+    "organizer": "Por confirmar",
     "sessions": [
       {
         "date": "2026-11-27",
@@ -532,7 +566,6 @@
     "artists": [],
     "access": "free",
     "accessNote": "Gratis",
-    "tickets": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/",
     "source": {
       "name": "Visit Quito · Agenda de eventos",
       "url": "https://visitquito.ec/es/eventos/",
@@ -542,15 +575,16 @@
     "featured": false,
     "imported": "visitquito",
     "priceAmount": 0,
-    "priceSource": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/"
+    "priceSource": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/",
+    "referenceUrl": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/"
   },
   {
     "id": "visitquito-evt-2026-0280",
     "title": "Coro Vozandes 2026: Voces y Recuerdos",
     "category": "Música",
-    "summary": "Concierto coral de Vozandes 2026.",
+    "summary": "Música en Teatro Nacional Sucre.",
     "venue": "Teatro Nacional Sucre",
-    "organizer": "Consultar organizador en la fuente",
+    "organizer": "Fundación Teatro Nacional Sucre",
     "sessions": [
       {
         "date": "2026-11-27",
@@ -560,25 +594,48 @@
       }
     ],
     "artists": [],
-    "access": "unknown",
+    "access": "paid",
     "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
-    "tickets": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos/",
+    "tickets": "https://tickets.teatrosucre.com/ev/coro-vozandes-2026-voces-y-recuerdos-",
     "source": {
-      "name": "Visit Quito · Agenda de eventos",
-      "url": "https://visitquito.ec/es/eventos/",
+      "name": "Fundación Teatro Nacional Sucre",
+      "url": "https://teatrosucre.com/",
       "checked": "2026-11-25"
     },
     "status": "scheduled",
     "featured": false,
-    "imported": "visitquito"
+    "imported": "teatrosucre",
+    "website": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos-2/",
+    "referenceUrl": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos/",
+    "description": [
+      "El Coro Vozandes, creado en 1965, mantiene una relación histórica con la ciudad de Quito. Su primera presentación se realizó en la Navidad de ese mismo año en el Teatro Nacional Sucre, dando inicio a una trayectoria artística de aproximadamente seis décadas vinculada a distintos escenarios de la ciudad.",
+      "Para esta ocasión, el Coro Vozandes presenta un repertorio que articula tradición y sensibilidad artística a través de música coral, sacra y canciones tradicionales quiteñas. La propuesta incluye además un recorrido por canciones representativas de las Fiestas de Quito y la Navidad, celebrando la memoria, las tradiciones y la riqueza cultural de la ciudad."
+    ],
+    "image": {
+      "url": "https://cdn.teatrosucre.com/wp-content/uploads/2026/09/25103231/231f654a-e687-40a3-a12e-06834c96b0e6.png",
+      "alt": "Afiche de Coro Vozandes 2026: Voces y Recuerdos",
+      "credit": "Fundación Teatro Nacional Sucre",
+      "source": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos-2/"
+    },
+    "price": "USD 20.00",
+    "priceAmount": 20,
+    "priceSource": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos-2/",
+    "contentSource": {
+      "name": "Fundación Teatro Nacional Sucre",
+      "url": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos-2/",
+      "checked": "2026-11-25"
+    },
+    "upstreamIds": [
+      "teatrosucre-coro-vozandes-2026-voces-y-recuerdos-2"
+    ]
   },
   {
     "id": "visitquito-evt-2026-0283",
-    "title": "Coro Vozandes 2026: Voces y Recuerdos – segunda función",
+    "title": "Coro Vozandes 2026: Voces y Recuerdos",
     "category": "Música",
-    "summary": "Segunda función del concierto coral Vozandes 2026.",
+    "summary": "Música en Teatro Nacional Sucre.",
     "venue": "Teatro Nacional Sucre",
-    "organizer": "Consultar organizador en la fuente",
+    "organizer": "Fundación Teatro Nacional Sucre",
     "sessions": [
       {
         "date": "2026-11-28",
@@ -588,17 +645,40 @@
       }
     ],
     "artists": [],
-    "access": "unknown",
+    "access": "paid",
     "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
-    "tickets": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos/",
+    "tickets": "https://tickets.teatrosucre.com/ev/coro-vozandes-2026-voces-y-recuerdos-4",
     "source": {
-      "name": "Visit Quito · Agenda de eventos",
-      "url": "https://visitquito.ec/es/eventos/",
+      "name": "Fundación Teatro Nacional Sucre",
+      "url": "https://teatrosucre.com/",
       "checked": "2026-11-25"
     },
     "status": "scheduled",
     "featured": false,
-    "imported": "visitquito"
+    "imported": "teatrosucre",
+    "website": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos-4/",
+    "referenceUrl": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos/",
+    "description": [
+      "El Coro Vozandes, creado en 1965, mantiene una relación histórica con la ciudad de Quito. Su primera presentación se realizó en la Navidad de ese mismo año en el Teatro Nacional Sucre, dando inicio a una trayectoria artística de aproximadamente seis décadas vinculada a distintos escenarios de la ciudad.",
+      "Para esta ocasión, el Coro Vozandes presenta un repertorio que articula tradición y sensibilidad artística a través de música coral, sacra y canciones tradicionales quiteñas. La propuesta incluye además un recorrido por canciones representativas de las Fiestas de Quito y la Navidad, celebrando la memoria, las tradiciones y la riqueza cultural de la ciudad."
+    ],
+    "image": {
+      "url": "https://cdn.teatrosucre.com/wp-content/uploads/2026/09/25103247/5a88d6c9-7f3f-4be1-9d93-de43a5a034a3.png",
+      "alt": "Afiche de Coro Vozandes 2026: Voces y Recuerdos",
+      "credit": "Fundación Teatro Nacional Sucre",
+      "source": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos-4/"
+    },
+    "price": "USD 20.00",
+    "priceAmount": 20,
+    "priceSource": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos-4/",
+    "contentSource": {
+      "name": "Fundación Teatro Nacional Sucre",
+      "url": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos-4/",
+      "checked": "2026-11-25"
+    },
+    "upstreamIds": [
+      "teatrosucre-coro-vozandes-2026-voces-y-recuerdos-4"
+    ]
   },
   {
     "id": "visitquito-evt-2026-0282",
@@ -606,7 +686,7 @@
     "category": "Música",
     "summary": "llega a Ecuador con su Afro Rosa Tour. Una nueva emoción para que que disfrutemos juntos en este 2026.",
     "venue": "Coliseo Rumiñahui",
-    "organizer": "Consultar organizador en la fuente",
+    "organizer": "Por confirmar",
     "sessions": [
       {
         "date": "2026-11-28",
@@ -624,15 +704,16 @@
     },
     "status": "scheduled",
     "featured": false,
-    "imported": "visitquito"
+    "imported": "visitquito",
+    "referenceUrl": "https://www.ticketshow.com.ec/evento/KAPO-EN-QUITO-2026"
   },
   {
     "id": "visitquito-evt-2026-0285",
     "title": "El Chulla Concierto",
     "category": "Música",
-    "summary": "Concierto especial por las celebraciones de Quito.",
+    "summary": "Música en vivo en la Casa de la Música.",
     "venue": "Casa de la Música",
-    "organizer": "Consultar organizador en la fuente",
+    "organizer": "Casa de la Música",
     "sessions": [
       {
         "date": "2026-12-04",
@@ -642,17 +723,38 @@
       }
     ],
     "artists": [],
-    "access": "unknown",
+    "access": "paid",
     "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
-    "tickets": "https://www.casadelamusica.ec/programacion/",
+    "tickets": "https://boletos.casadelamusica.ec/ev/el-chulla-concierto-2026",
     "source": {
-      "name": "Visit Quito · Agenda de eventos",
-      "url": "https://visitquito.ec/es/eventos/",
+      "name": "Casa de la Música · Programación",
+      "url": "https://www.casadelamusica.ec/programacion",
       "checked": "2026-11-25"
     },
     "status": "scheduled",
     "featured": false,
-    "imported": "visitquito"
+    "imported": "casamusica",
+    "website": "https://www.casadelamusica.ec/programacion/el-chulla-concierto-2026",
+    "referenceUrl": "https://www.casadelamusica.ec/programacion/",
+    "description": [
+      "La Casa de la Música y WT Shows presentan el concierto oficial de las fiestas de Quito: EL CHULLA CONCIERTO, un espectáculo para cantar, bailar y celebrar a la Carita de Dios. Hay tradiciones que nunca pueden faltar. Porque no son fiestas de Quito sino suenan las canciones de Don Medardo y sus Players, sino mantenemos el legado de la Grande del Ecuador con Willie y Paola Tamayo y si no bailamos al ritmo de la banda de bandas San Jerónimo, y con invitadas especiales Pepita Naranjo Vargas y María Esther Bowen."
+    ],
+    "image": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5477b6e0e4b07ec2525f51b0/1795445975637-YRFRR9A4OJCH1R41O3TX/04-PROGRAMACION-CHULLA-CONCIERTO.jpg",
+      "alt": "Afiche de El Chulla Concierto",
+      "credit": "Casa de la Música",
+      "source": "https://www.casadelamusica.ec/programacion/el-chulla-concierto-2026"
+    },
+    "price": "Valor butaca baja $40 y butaca alta $30 + $1,75 de tarifa de servicio (se aplica a todas las formas de pago).",
+    "priceSource": "https://www.casadelamusica.ec/programacion/el-chulla-concierto-2026",
+    "contentSource": {
+      "name": "Casa de la Música",
+      "url": "https://www.casadelamusica.ec/programacion/el-chulla-concierto-2026",
+      "checked": "2026-11-25"
+    },
+    "upstreamIds": [
+      "casamusica-el-chulla-concierto-2026"
+    ]
   },
   {
     "id": "visitquito-evt-2026-0300",
@@ -660,7 +762,7 @@
     "category": "Arte",
     "summary": "ENTRE MURALES Y SABORES",
     "venue": "Sur de Quito",
-    "organizer": "Consultar organizador en la fuente",
+    "organizer": "Por confirmar",
     "sessions": [
       {
         "date": "2026-12-05",
@@ -672,7 +774,6 @@
     "artists": [],
     "access": "unknown",
     "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
-    "tickets": "https://pasaporte.visitquito.ec/go/tku74vce",
     "source": {
       "name": "Visit Quito · Agenda de eventos",
       "url": "https://visitquito.ec/es/eventos/",
@@ -680,7 +781,9 @@
     },
     "status": "scheduled",
     "featured": false,
-    "imported": "visitquito"
+    "imported": "visitquito",
+    "website": "https://pasaporte.visitquito.ec/go/tku74vce",
+    "referenceUrl": "https://pasaporte.visitquito.ec/go/tku74vce"
   },
   {
     "id": "visitquito-evt-2026-0290",
@@ -688,7 +791,7 @@
     "category": "Música",
     "summary": "Festival musical programado en Sky Domo por las celebraciones de Quito.",
     "venue": "Sky Domo",
-    "organizer": "Consultar organizador en la fuente",
+    "organizer": "Por confirmar",
     "sessions": [
       {
         "date": "2026-12-05",
@@ -698,7 +801,6 @@
     "artists": [],
     "access": "unknown",
     "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
-    "tickets": "https://www.quitobohemio.com/eventos",
     "source": {
       "name": "Visit Quito · Agenda de eventos",
       "url": "https://visitquito.ec/es/eventos/",
@@ -706,15 +808,16 @@
     },
     "status": "scheduled",
     "featured": false,
-    "imported": "visitquito"
+    "imported": "visitquito",
+    "referenceUrl": "https://www.quitobohemio.com/eventos"
   },
   {
     "id": "visitquito-evt-2026-0292",
-    "title": "Chulla Rock Fest / El Tri – Adicto al Rocanrol",
+    "title": "El Tri",
     "category": "Música",
-    "summary": "Concierto de El Tri en Quito como parte de su gira Adicto al Rocanrol.",
+    "summary": "Concierto de rock en Quito 2026",
     "venue": "Plaza de Toros Quito",
-    "organizer": "Consultar organizador en la fuente",
+    "organizer": "Por confirmar",
     "sessions": [
       {
         "date": "2026-12-12",
@@ -734,15 +837,19 @@
     },
     "status": "scheduled",
     "featured": false,
-    "imported": "visitquito"
+    "imported": "visitquito",
+    "referenceUrl": "https://www.buenplan.com.ec/event/eltri-2026-quito",
+    "upstreamIds": [
+      "visitquito-evt-2026-0293"
+    ]
   },
   {
     "id": "visitquito-evt-2026-0295",
-    "title": "El Cascanueces – primera función",
+    "title": "Primera función: El Cascanueces",
     "category": "Escena",
-    "summary": "Primera función de El Cascanueces en Casa de la Música.",
+    "summary": "Una función en la Casa de la Música.",
     "venue": "Casa de la Música",
-    "organizer": "Consultar organizador en la fuente",
+    "organizer": "Casa de la Música",
     "sessions": [
       {
         "date": "2026-12-16",
@@ -752,25 +859,47 @@
       }
     ],
     "artists": [],
-    "access": "unknown",
+    "access": "paid",
     "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
-    "tickets": "https://www.casadelamusica.ec/programacion/",
+    "tickets": "https://boletos.casadelamusica.ec/ev/primera-funcion-el-cascanueces",
     "source": {
-      "name": "Visit Quito · Agenda de eventos",
-      "url": "https://visitquito.ec/es/eventos/",
+      "name": "Casa de la Música · Programación",
+      "url": "https://www.casadelamusica.ec/programacion",
       "checked": "2026-11-25"
     },
     "status": "scheduled",
     "featured": false,
-    "imported": "visitquito"
+    "imported": "casamusica",
+    "website": "https://www.casadelamusica.ec/programacion/1funcionelcascanueces2026",
+    "referenceUrl": "https://www.casadelamusica.ec/programacion/",
+    "description": [
+      "Esta Navidad, comparte la magia de «El Cascanueces», con música interpretada 100% en vivo por la Orquesta Sinfónica Nacional del Ecuador. Vive esta gran tradición en La Casa de la Música bajo la dirección musical del Maestro Davit Harutyunyan, junto a Quito Ballet & Dance Company y la dirección escénica y coreográfica del Maestro Héctor Sanzana. Más de cien artistas en escena dan vida al ballet «El Cascanueces»"
+    ],
+    "image": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5477b6e0e4b07ec2525f51b0/1794409545146-0HX6GQ8V83M6Q40YHKAX/16-PROGRAMACION-1-CASCANUECES.jpg",
+      "alt": "Afiche de Primera función: El Cascanueces",
+      "credit": "Casa de la Música",
+      "source": "https://www.casadelamusica.ec/programacion/1funcionelcascanueces2026"
+    },
+    "price": "USD 36.75 (incluye tarifa de servicio)",
+    "priceAmount": 36.75,
+    "priceSource": "https://www.casadelamusica.ec/programacion/1funcionelcascanueces2026",
+    "contentSource": {
+      "name": "Casa de la Música",
+      "url": "https://www.casadelamusica.ec/programacion/1funcionelcascanueces2026",
+      "checked": "2026-11-25"
+    },
+    "upstreamIds": [
+      "casamusica-1funcionelcascanueces2026"
+    ]
   },
   {
     "id": "visitquito-evt-2026-0296",
-    "title": "El Cascanueces – segunda función",
+    "title": "Segunda función: El Cascanueces",
     "category": "Escena",
-    "summary": "Segunda función de El Cascanueces en Casa de la Música.",
+    "summary": "Una función en la Casa de la Música.",
     "venue": "Casa de la Música",
-    "organizer": "Consultar organizador en la fuente",
+    "organizer": "Casa de la Música",
     "sessions": [
       {
         "date": "2026-12-17",
@@ -780,25 +909,47 @@
       }
     ],
     "artists": [],
-    "access": "unknown",
+    "access": "paid",
     "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
-    "tickets": "https://www.casadelamusica.ec/programacion/",
+    "tickets": "https://boletos.casadelamusica.ec/ev/segunda-funcion-el-cascanueces",
     "source": {
-      "name": "Visit Quito · Agenda de eventos",
-      "url": "https://visitquito.ec/es/eventos/",
+      "name": "Casa de la Música · Programación",
+      "url": "https://www.casadelamusica.ec/programacion",
       "checked": "2026-11-25"
     },
     "status": "scheduled",
     "featured": false,
-    "imported": "visitquito"
+    "imported": "casamusica",
+    "website": "https://www.casadelamusica.ec/programacion/2funcionelcascanueces2026",
+    "referenceUrl": "https://www.casadelamusica.ec/programacion/",
+    "description": [
+      "Esta Navidad, comparte la magia de «El Cascanueces», con música interpretada 100% en vivo por la Orquesta Sinfónica Nacional del Ecuador. Vive esta gran tradición en La Casa de la Música bajo la dirección musical del Maestro Davit Harutyunyan, junto a Quito Ballet & Dance Company y la dirección escénica y coreográfica del Maestro Héctor Sanzana. Más de cien artistas en escena dan vida al ballet «El Cascanueces»"
+    ],
+    "image": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5477b6e0e4b07ec2525f51b0/1794409581465-9CHNLEBF0QWWE70S7JO2/16-PROGRAMACION-2-CASCANUECES.jpg",
+      "alt": "Afiche de Segunda función: El Cascanueces",
+      "credit": "Casa de la Música",
+      "source": "https://www.casadelamusica.ec/programacion/2funcionelcascanueces2026"
+    },
+    "price": "USD 36.75 (incluye tarifa de servicio)",
+    "priceAmount": 36.75,
+    "priceSource": "https://www.casadelamusica.ec/programacion/2funcionelcascanueces2026",
+    "contentSource": {
+      "name": "Casa de la Música",
+      "url": "https://www.casadelamusica.ec/programacion/2funcionelcascanueces2026",
+      "checked": "2026-11-25"
+    },
+    "upstreamIds": [
+      "casamusica-2funcionelcascanueces2026"
+    ]
   },
   {
     "id": "visitquito-evt-2026-0297",
-    "title": "El Cascanueces – tercera función",
+    "title": "Tercera función: El Cascanueces",
     "category": "Escena",
-    "summary": "Tercera función de El Cascanueces en Casa de la Música.",
+    "summary": "Una función en la Casa de la Música.",
     "venue": "Casa de la Música",
-    "organizer": "Consultar organizador en la fuente",
+    "organizer": "Casa de la Música",
     "sessions": [
       {
         "date": "2026-12-18",
@@ -808,25 +959,47 @@
       }
     ],
     "artists": [],
-    "access": "unknown",
+    "access": "paid",
     "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
-    "tickets": "https://www.casadelamusica.ec/programacion/",
+    "tickets": "https://boletos.casadelamusica.ec/ev/tercera-funcion-el-cascanueces",
     "source": {
-      "name": "Visit Quito · Agenda de eventos",
-      "url": "https://visitquito.ec/es/eventos/",
+      "name": "Casa de la Música · Programación",
+      "url": "https://www.casadelamusica.ec/programacion",
       "checked": "2026-11-25"
     },
     "status": "scheduled",
     "featured": false,
-    "imported": "visitquito"
+    "imported": "casamusica",
+    "website": "https://www.casadelamusica.ec/programacion/3funcionelcascanueces2026",
+    "referenceUrl": "https://www.casadelamusica.ec/programacion/",
+    "description": [
+      "Esta Navidad, comparte la magia de «El Cascanueces», con música interpretada 100% en vivo por la Orquesta Sinfónica Nacional del Ecuador. Vive esta gran tradición en La Casa de la Música bajo la dirección musical del Maestro Davit Harutyunyan, junto a Quito Ballet & Dance Company y la dirección escénica y coreográfica del Maestro Héctor Sanzana. Más de cien artistas en escena dan vida al ballet «El Cascanueces»"
+    ],
+    "image": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5477b6e0e4b07ec2525f51b0/1794409605447-K3B871XUOXP1EKBYEVGZ/16-PROGRAMACION-3-CASCANUECES.jpg",
+      "alt": "Afiche de Tercera función: El Cascanueces",
+      "credit": "Casa de la Música",
+      "source": "https://www.casadelamusica.ec/programacion/3funcionelcascanueces2026"
+    },
+    "price": "USD 36.75 (incluye tarifa de servicio)",
+    "priceAmount": 36.75,
+    "priceSource": "https://www.casadelamusica.ec/programacion/3funcionelcascanueces2026",
+    "contentSource": {
+      "name": "Casa de la Música",
+      "url": "https://www.casadelamusica.ec/programacion/3funcionelcascanueces2026",
+      "checked": "2026-11-25"
+    },
+    "upstreamIds": [
+      "casamusica-3funcionelcascanueces2026"
+    ]
   },
   {
     "id": "visitquito-evt-2026-0298",
-    "title": "El Cascanueces – cuarta función",
+    "title": "Cuarta función: El Cascanueces",
     "category": "Escena",
-    "summary": "Cuarta función de El Cascanueces en Casa de la Música.",
+    "summary": "Una función en la Casa de la Música.",
     "venue": "Casa de la Música",
-    "organizer": "Consultar organizador en la fuente",
+    "organizer": "Casa de la Música",
     "sessions": [
       {
         "date": "2026-12-19",
@@ -836,16 +1009,522 @@
       }
     ],
     "artists": [],
-    "access": "unknown",
+    "access": "paid",
     "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
-    "tickets": "https://www.casadelamusica.ec/programacion/",
+    "tickets": "https://boletos.casadelamusica.ec/ev/cuarta-funcion-el-cascanueces",
     "source": {
-      "name": "Visit Quito · Agenda de eventos",
-      "url": "https://visitquito.ec/es/eventos/",
+      "name": "Casa de la Música · Programación",
+      "url": "https://www.casadelamusica.ec/programacion",
       "checked": "2026-11-25"
     },
     "status": "scheduled",
     "featured": false,
-    "imported": "visitquito"
+    "imported": "casamusica",
+    "website": "https://www.casadelamusica.ec/programacion/4funcionelcascanueces2026",
+    "referenceUrl": "https://www.casadelamusica.ec/programacion/",
+    "description": [
+      "Esta Navidad, comparte la magia de «El Cascanueces», con música interpretada 100% en vivo por la Orquesta Sinfónica Nacional del Ecuador. Vive esta gran tradición en La Casa de la Música bajo la dirección musical del Maestro Davit Harutyunyan, junto a Quito Ballet & Dance Company y la dirección escénica y coreográfica del Maestro Héctor Sanzana. Más de cien artistas en escena dan vida al ballet «El Cascanueces»"
+    ],
+    "image": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5477b6e0e4b07ec2525f51b0/1794409630720-882CFU91LPTH0S447T2N/16-PROGRAMACION-4-CASCANUECES.jpg",
+      "alt": "Afiche de Cuarta función: El Cascanueces",
+      "credit": "Casa de la Música",
+      "source": "https://www.casadelamusica.ec/programacion/4funcionelcascanueces2026"
+    },
+    "price": "USD 36.75 (incluye tarifa de servicio)",
+    "priceAmount": 36.75,
+    "priceSource": "https://www.casadelamusica.ec/programacion/4funcionelcascanueces2026",
+    "contentSource": {
+      "name": "Casa de la Música",
+      "url": "https://www.casadelamusica.ec/programacion/4funcionelcascanueces2026",
+      "checked": "2026-11-25"
+    },
+    "upstreamIds": [
+      "casamusica-4funcionelcascanueces2026"
+    ]
+  },
+  {
+    "id": "casamusica-noche-de-velitas-la-sonora-dinamita-2026",
+    "title": "Noche de las Velitas: La Sonora Dinamita",
+    "category": "Música",
+    "summary": "Música en vivo en la Casa de la Música.",
+    "description": [
+      "La Sonora Dinamita llega a la Casa de la Música para encender la Noche de las Velitas. Baila, canta y disfruta de sus éxitos, con su ritmo inconfundible y toda su energía. Y para animar aún más la celebración, un imperdible Jam colombiano con cumbias, vallenatos, ritmos tropicales y más sorpresas."
+    ],
+    "image": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5477b6e0e4b07ec2525f51b0/1795449955153-AYM9V4J5NFX0VPDSG1OV/11-PROGRAMACION-NOCHE-DE-LAS-VELITAS.jpg",
+      "alt": "Afiche de Noche de las Velitas: La Sonora Dinamita",
+      "credit": "Casa de la Música",
+      "source": "https://www.casadelamusica.ec/programacion/noche-de-velitas-la-sonora-dinamita-2026"
+    },
+    "venue": "Casa de la Música",
+    "organizer": "Casa de la Música",
+    "sessions": [
+      {
+        "date": "2026-12-11",
+        "times": [
+          "20:00"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "paid",
+    "price": "USD 36.75 (incluye tarifa de servicio)",
+    "priceAmount": 36.75,
+    "priceSource": "https://www.casadelamusica.ec/programacion/noche-de-velitas-la-sonora-dinamita-2026",
+    "tickets": "https://boletos.casadelamusica.ec/ev/nochedevelitas2026",
+    "website": "https://www.casadelamusica.ec/programacion/noche-de-velitas-la-sonora-dinamita-2026",
+    "contentSource": {
+      "name": "Casa de la Música",
+      "url": "https://www.casadelamusica.ec/programacion/noche-de-velitas-la-sonora-dinamita-2026",
+      "checked": "2026-11-25"
+    },
+    "source": {
+      "name": "Casa de la Música · Programación",
+      "url": "https://www.casadelamusica.ec/programacion",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "casamusica"
+  },
+  {
+    "id": "casamusica-concierto-de-navidad-2026",
+    "title": "Concierto de Navidad",
+    "category": "Música",
+    "summary": "Música en vivo en la Casa de la Música.",
+    "description": [
+      "¡Siente el espíritu navideño y celebra la época más especial del año! La Casa de la Música y WT Shows presentan su tradicional: CONCIERTO DE NAVIDAD. Revive los villancicos de siempre junto a Los Pibes Trujillo, las voces originales que han acompañado desde siempre al Ecuador. Y disfruta de los grandes clásicos navideños con la calidez de Karla Kanora, el carisma de Damiano, el estilo inconfundible de Nelson Maldonado y el talento de Willie y Paola Tamayo."
+    ],
+    "image": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5477b6e0e4b07ec2525f51b0/1795107254243-7G7R7EUFXW93PK3MDPV9/12-PROGRAMACION-CONCIERTO-DE-NAVIDAD.jpg",
+      "alt": "Afiche de Concierto de Navidad",
+      "credit": "Casa de la Música",
+      "source": "https://www.casadelamusica.ec/programacion/concierto-de-navidad-2026"
+    },
+    "venue": "Casa de la Música",
+    "organizer": "Casa de la Música",
+    "sessions": [
+      {
+        "date": "2026-12-12",
+        "times": [
+          "19:00"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "paid",
+    "price": "Valor butaca baja $40 y butaca alta $30 + $1,75 de tarifa de servicio (se aplica a todas las formas de pago). PREVENTA HASTA EL 6 DE DICIEMBRE: CON TU DINERS OBTÉN EL 10% DE DESCUENTO *No aplica descuento sobre descuento",
+    "priceSource": "https://www.casadelamusica.ec/programacion/concierto-de-navidad-2026",
+    "tickets": "https://boletos.casadelamusica.ec/ev/concierto-de-navidad",
+    "website": "https://www.casadelamusica.ec/programacion/concierto-de-navidad-2026",
+    "contentSource": {
+      "name": "Casa de la Música",
+      "url": "https://www.casadelamusica.ec/programacion/concierto-de-navidad-2026",
+      "checked": "2026-11-25"
+    },
+    "source": {
+      "name": "Casa de la Música · Programación",
+      "url": "https://www.casadelamusica.ec/programacion",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "casamusica"
+  },
+  {
+    "id": "casamusica-primera-funcion-concierto-de-anio-nuevo-2026",
+    "title": "Primera función: Concierto de Año Nuevo",
+    "category": "Música",
+    "summary": "Música en vivo en la Casa de la Música.",
+    "image": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5477b6e0e4b07ec2525f51b0/1795024613956-RSKA8S32B94K7KR9XIDR/09-Obra-A%C3%B1o-Nuevo.jpg",
+      "alt": "Afiche de Primera función: Concierto de Año Nuevo",
+      "credit": "Casa de la Música",
+      "source": "https://www.casadelamusica.ec/programacion/primera-funcion-concierto-de-anio-nuevo-2026"
+    },
+    "venue": "Casa de la Música",
+    "organizer": "Casa de la Música",
+    "sessions": [
+      {
+        "date": "2027-01-15",
+        "times": [
+          "20:00"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "paid",
+    "price": "La Casa de la Música, la Orquesta Sinfónica Nacional del Ecuador y el Consulado General de Austria en el Ecuador presentan su tradicional Concierto de Año Nuevo – valses, polcas y marchas de la dinastía Strauss. Sala de Conciertos 20h00 Valor butaca baja $40 y butaca alta $30 + $1,75 de tarifa de se",
+    "priceSource": "https://www.casadelamusica.ec/programacion/primera-funcion-concierto-de-anio-nuevo-2026",
+    "tickets": "https://boletos.casadelamusica.ec/ev/primera-funcion-concierto-de-anio-nuevo-",
+    "website": "https://www.casadelamusica.ec/programacion/primera-funcion-concierto-de-anio-nuevo-2026",
+    "contentSource": {
+      "name": "Casa de la Música",
+      "url": "https://www.casadelamusica.ec/programacion/primera-funcion-concierto-de-anio-nuevo-2026",
+      "checked": "2026-11-25"
+    },
+    "source": {
+      "name": "Casa de la Música · Programación",
+      "url": "https://www.casadelamusica.ec/programacion",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "casamusica"
+  },
+  {
+    "id": "casamusica-segunda-funcion-concierto-de-anio-nuevo-2026",
+    "title": "Segunda función: Concierto de Año Nuevo",
+    "category": "Música",
+    "summary": "Música en vivo en la Casa de la Música.",
+    "image": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5477b6e0e4b07ec2525f51b0/1795024613956-RSKA8S32B94K7KR9XIDR/09-Obra-A%C3%B1o-Nuevo.jpg",
+      "alt": "Afiche de Segunda función: Concierto de Año Nuevo",
+      "credit": "Casa de la Música",
+      "source": "https://www.casadelamusica.ec/programacion/segunda-funcion-concierto-de-anio-nuevo-2026"
+    },
+    "venue": "Casa de la Música",
+    "organizer": "Casa de la Música",
+    "sessions": [
+      {
+        "date": "2027-01-16",
+        "times": [
+          "20:00"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "paid",
+    "price": "La Casa de la Música, la Orquesta Sinfónica Nacional del Ecuador y el Consulado General de Austria en el Ecuador presentan su tradicional Concierto de Año Nuevo – valses, polcas y marchas de la dinastía Strauss. Sala de Conciertos 20h00 Valor butaca baja $40 y butaca alta $30 + $1,75 de tarifa de se",
+    "priceSource": "https://www.casadelamusica.ec/programacion/segunda-funcion-concierto-de-anio-nuevo-2026",
+    "tickets": "https://boletos.casadelamusica.ec/ev/segunda-funcion-concierto-de-anio-nuevo-",
+    "website": "https://www.casadelamusica.ec/programacion/segunda-funcion-concierto-de-anio-nuevo-2026",
+    "contentSource": {
+      "name": "Casa de la Música",
+      "url": "https://www.casadelamusica.ec/programacion/segunda-funcion-concierto-de-anio-nuevo-2026",
+      "checked": "2026-11-25"
+    },
+    "source": {
+      "name": "Casa de la Música · Programación",
+      "url": "https://www.casadelamusica.ec/programacion",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "casamusica"
+  },
+  {
+    "id": "casamusica-dominic-miller-en-ecuador",
+    "title": "Dominic Miller en Ecuador",
+    "category": "Música",
+    "summary": "Música en vivo en la Casa de la Música.",
+    "description": [
+      "LLEGA DOMINIC MILLER LA LEYENDA MUNDIAL DE LA GUITARRA Guitarrista de Sting y coautor de Shape of My Heart, la icónica canción de Léon: El Profesional. Invitado especial: Andrés Cabas"
+    ],
+    "image": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5477b6e0e4b07ec2525f51b0/1795101966513-R7DJVVJMPPWRWG00JW5V/27-PROGRAMACION-DOMINIC-MILLER.jpg",
+      "alt": "Afiche de Dominic Miller en Ecuador",
+      "credit": "Casa de la Música",
+      "source": "https://www.casadelamusica.ec/programacion/dominic-miller-en-ecuador"
+    },
+    "venue": "Casa de la Música",
+    "organizer": "Casa de la Música",
+    "sessions": [
+      {
+        "date": "2027-01-27",
+        "times": [
+          "20:00"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "unknown",
+    "tickets": "https://boletos.casadelamusica.ec/ev/dominic-miller-en-ecuador",
+    "website": "https://www.casadelamusica.ec/programacion/dominic-miller-en-ecuador",
+    "contentSource": {
+      "name": "Casa de la Música",
+      "url": "https://www.casadelamusica.ec/programacion/dominic-miller-en-ecuador",
+      "checked": "2026-11-25"
+    },
+    "source": {
+      "name": "Casa de la Música · Programación",
+      "url": "https://www.casadelamusica.ec/programacion",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "casamusica"
+  },
+  {
+    "id": "casamusica-clase-magistral-con-dominic-miller",
+    "title": "Clase Magistral con Dominic Miller",
+    "category": "Talleres",
+    "summary": "Un encuentro para aprender en la Casa de la Música.",
+    "description": [
+      "Consorcio Mujeres sin Fronteras tiene el agrado de invitar a estudiantes, guitarristas y músicos en general a la CLASE MAGISTRAL CON DOMINIC MILLER, uno de los guitarristas más influyentes de la música contemporánea y principal colaborador artístico de Sting durante más de tres décadas."
+    ],
+    "image": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5477b6e0e4b07ec2525f51b0/1795102138728-GWQMEGZYDZJC8OKUFZ9M/27-PROGRAMACION-DOMINIC-MILLER.jpg",
+      "alt": "Afiche de Clase Magistral con Dominic Miller",
+      "credit": "Casa de la Música",
+      "source": "https://www.casadelamusica.ec/programacion/clase-magistral-con-dominic-miller"
+    },
+    "venue": "Casa de la Música",
+    "organizer": "Casa de la Música",
+    "sessions": [
+      {
+        "date": "2027-01-28",
+        "times": [
+          "10:00"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "paid",
+    "price": "USD 25.00",
+    "priceAmount": 25,
+    "priceSource": "https://www.casadelamusica.ec/programacion/clase-magistral-con-dominic-miller",
+    "tickets": "https://boletos.casadelamusica.ec/ev/clase-magistral-con-dominic-miller",
+    "website": "https://www.casadelamusica.ec/programacion/clase-magistral-con-dominic-miller",
+    "contentSource": {
+      "name": "Casa de la Música",
+      "url": "https://www.casadelamusica.ec/programacion/clase-magistral-con-dominic-miller",
+      "checked": "2026-11-25"
+    },
+    "source": {
+      "name": "Casa de la Música · Programación",
+      "url": "https://www.casadelamusica.ec/programacion",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "casamusica"
+  },
+  {
+    "id": "teatrosucre-coro-vozandes-2026-voces-y-recuerdos",
+    "title": "Coro Vozandes 2026: Voces y Recuerdos",
+    "category": "Música",
+    "summary": "Música en Teatro Nacional Sucre.",
+    "description": [
+      "El Coro Vozandes, creado en 1965, mantiene una relación histórica con la ciudad de Quito. Su primera presentación se realizó en la Navidad de ese mismo año en el Teatro Nacional Sucre, dando inicio a una trayectoria artística de aproximadamente seis décadas vinculada a distintos escenarios de la ciudad.",
+      "Para esta ocasión, el Coro Vozandes presenta un repertorio que articula tradición y sensibilidad artística a través de música coral, sacra y canciones tradicionales quiteñas. La propuesta incluye además un recorrido por canciones representativas de las Fiestas de Quito y la Navidad, celebrando la memoria, las tradiciones y la riqueza cultural de la ciudad."
+    ],
+    "image": {
+      "url": "https://cdn.teatrosucre.com/wp-content/uploads/2026/09/25103212/e3156f86-2fdc-49c9-a74e-d24f76c73598.png",
+      "alt": "Afiche de Coro Vozandes 2026: Voces y Recuerdos",
+      "credit": "Fundación Teatro Nacional Sucre",
+      "source": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos/"
+    },
+    "venue": "Teatro Nacional Sucre",
+    "organizer": "Fundación Teatro Nacional Sucre",
+    "sessions": [
+      {
+        "date": "2026-11-27",
+        "times": [
+          "15:30"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "paid",
+    "price": "USD 20.00",
+    "priceAmount": 20,
+    "priceSource": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos/",
+    "tickets": "https://tickets.teatrosucre.com/ev/coro-vozandes-2026-voces-y-recuerdos-1",
+    "website": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos/",
+    "contentSource": {
+      "name": "Fundación Teatro Nacional Sucre",
+      "url": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos/",
+      "checked": "2026-11-25"
+    },
+    "source": {
+      "name": "Fundación Teatro Nacional Sucre",
+      "url": "https://teatrosucre.com/",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "teatrosucre"
+  },
+  {
+    "id": "teatrosucre-coro-vozandes-2026-voces-y-recuerdos-3",
+    "title": "Coro Vozandes 2026: Voces y Recuerdos",
+    "category": "Música",
+    "summary": "Música en Teatro Nacional Sucre.",
+    "description": [
+      "El Coro Vozandes, creado en 1965, mantiene una relación histórica con la ciudad de Quito. Su primera presentación se realizó en la Navidad de ese mismo año en el Teatro Nacional Sucre, dando inicio a una trayectoria artística de aproximadamente seis décadas vinculada a distintos escenarios de la ciudad.",
+      "Para esta ocasión, el Coro Vozandes presenta un repertorio que articula tradición y sensibilidad artística a través de música coral, sacra y canciones tradicionales quiteñas. La propuesta incluye además un recorrido por canciones representativas de las Fiestas de Quito y la Navidad, celebrando la memoria, las tradiciones y la riqueza cultural de la ciudad."
+    ],
+    "image": {
+      "url": "https://cdn.teatrosucre.com/wp-content/uploads/2026/09/25103239/3470edd8-0289-4ac7-a92b-aa9d70d5cecf.png",
+      "alt": "Afiche de Coro Vozandes 2026: Voces y Recuerdos",
+      "credit": "Fundación Teatro Nacional Sucre",
+      "source": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos-3/"
+    },
+    "venue": "Teatro Nacional Sucre",
+    "organizer": "Fundación Teatro Nacional Sucre",
+    "sessions": [
+      {
+        "date": "2026-11-28",
+        "times": [
+          "15:00"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "paid",
+    "price": "USD 20.00",
+    "priceAmount": 20,
+    "priceSource": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos-3/",
+    "tickets": "https://tickets.teatrosucre.com/ev/coro-vozandes-2026-voces-y-recuerdos-tres",
+    "website": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos-3/",
+    "contentSource": {
+      "name": "Fundación Teatro Nacional Sucre",
+      "url": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos-3/",
+      "checked": "2026-11-25"
+    },
+    "source": {
+      "name": "Fundación Teatro Nacional Sucre",
+      "url": "https://teatrosucre.com/",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "teatrosucre"
+  },
+  {
+    "id": "teatrosucre-fiestas-de-quito-viva-el-pasacalle-teatro-nacional-sucre",
+    "title": "Fiestas de Quito Viva el Pasacalle | Teatro Nacional Sucre",
+    "category": "Música",
+    "summary": "Música en Teatro Nacional Sucre.",
+    "description": [
+      "El Grupo “Yavirac” presentará un concierto rindiendo un homenaje a nuestra querida ciudad de Quito, en donde estaremos interpretando un repertorio tradicional, para el deleite del público asistente. El concierto se llevará a cabo en el centro histórico de Quito. Este concierto tiene por objeto, compartir con la comunidad de nuestra ciudad, teniendo en cuenta lo esencial que es el compartir las festividades por medio del arte musical.",
+      "A ti mi quito Lindo Las quiteñitas El farrista quiteño Apasionadamente Comisario municipal Chimbacalle El Simiruco Maravillas quiteñas Que lindo es mi quito Al otro lado del rio Primor de chola Lindo quito de mi vida Agua de guayusa Balcón quiteño El…"
+    ],
+    "image": {
+      "url": "https://cdn.teatrosucre.com/wp-content/uploads/2026/11/25175121/e7f88822-e77b-4570-b2a7-ab4880e43e82-1024x581.png",
+      "alt": "Afiche de Fiestas de Quito Viva el Pasacalle | Teatro Nacional Sucre",
+      "credit": "Fundación Teatro Nacional Sucre",
+      "source": "https://teatrosucre.com/event/fiestas-de-quito-viva-el-pasacalle-teatro-nacional-sucre/"
+    },
+    "venue": "Teatro Nacional Sucre",
+    "organizer": "Fundación Teatro Nacional Sucre",
+    "sessions": [
+      {
+        "date": "2026-12-03",
+        "times": [
+          "19:00"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "free",
+    "priceAmount": 0,
+    "priceSource": "https://teatrosucre.com/event/fiestas-de-quito-viva-el-pasacalle-teatro-nacional-sucre/",
+    "tickets": "https://tickets.teatrosucre.com/ev/fiestas-de-quito-viva-el-pasacalle-teatro-nacional-sucre",
+    "website": "https://teatrosucre.com/event/fiestas-de-quito-viva-el-pasacalle-teatro-nacional-sucre/",
+    "contentSource": {
+      "name": "Fundación Teatro Nacional Sucre",
+      "url": "https://teatrosucre.com/event/fiestas-de-quito-viva-el-pasacalle-teatro-nacional-sucre/",
+      "checked": "2026-11-25"
+    },
+    "source": {
+      "name": "Fundación Teatro Nacional Sucre",
+      "url": "https://teatrosucre.com/",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "teatrosucre"
+  },
+  {
+    "id": "teatrosucre-fiestas-de-quito-viva-el-pasacalle-teatro-mexico",
+    "title": "Fiestas de Quito Viva el Pasacalle | Teatro México",
+    "category": "Música",
+    "summary": "Música en Teatro México.",
+    "description": [
+      "El Grupo “Yavirac” presentará un concierto rindiendo un homenaje a nuestra querida ciudad de Quito, en donde estaremos interpretando un repertorio tradicional, para el deleite del público asistente. El concierto se llevará a cabo en el centro histórico de Quito. Este concierto tiene por objeto, compartir con la comunidad de nuestra ciudad, teniendo en cuenta lo esencial que es el compartir las festividades por medio del arte musical.",
+      "A ti mi quito Lindo Las quiteñitas El farrista quiteño Apasionadamente Comisario municipal Chimbacalle El Simiruco Maravillas quiteñas Que lindo es mi quito Al otro lado del rio Primor de chola Lindo quito de mi vida Agua de guayusa Balcón quiteño El…"
+    ],
+    "image": {
+      "url": "https://cdn.teatrosucre.com/wp-content/uploads/2026/11/25175150/99dd3371-1839-4ced-9a12-66b3b9360c17-1024x581.png",
+      "alt": "Afiche de Fiestas de Quito Viva el Pasacalle | Teatro México",
+      "credit": "Fundación Teatro Nacional Sucre",
+      "source": "https://teatrosucre.com/event/fiestas-de-quito-viva-el-pasacalle-teatro-mexico/"
+    },
+    "venue": "Teatro México",
+    "organizer": "Fundación Teatro Nacional Sucre",
+    "sessions": [
+      {
+        "date": "2026-12-04",
+        "times": [
+          "19:00"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "free",
+    "priceAmount": 0,
+    "priceSource": "https://teatrosucre.com/event/fiestas-de-quito-viva-el-pasacalle-teatro-mexico/",
+    "tickets": "https://tickets.teatrosucre.com/ev/fiestas-de-quito-viva-el-pasacalle-teatro-mexico",
+    "website": "https://teatrosucre.com/event/fiestas-de-quito-viva-el-pasacalle-teatro-mexico/",
+    "contentSource": {
+      "name": "Fundación Teatro Nacional Sucre",
+      "url": "https://teatrosucre.com/event/fiestas-de-quito-viva-el-pasacalle-teatro-mexico/",
+      "checked": "2026-11-25"
+    },
+    "source": {
+      "name": "Fundación Teatro Nacional Sucre",
+      "url": "https://teatrosucre.com/",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "teatrosucre"
+  },
+  {
+    "id": "teatrosucre-forever-cumbia",
+    "title": "Forever Cumbia",
+    "category": "Música",
+    "summary": "Música en Teatro Nacional Sucre.",
+    "description": [
+      "FOREVER CUMBIA se concibe como una jornada musical que celebra la permanencia, vigencia y capacidad de renovación de la música tropical dentro de la memoria colectiva y la cultura popular. A partir de la cumbia como uno de los lenguajes musicales de mayor arraigo y circulación en América Latina, la propuesta plantea un encuentro entre distintas expresiones de la música bailable, sus sonoridades, interpretaciones y formas de relacionarse con el público. También propone una experiencia escénica que pone en valor la música tropical desde la interpretación en vivo, la diversidad de agrupaciones y la relación directa con los espectadores. La jornada reúne a Azuquito, La Familia y Los Titos, tres…"
+    ],
+    "image": {
+      "url": "https://cdn.teatrosucre.com/wp-content/uploads/2026/11/25173847/65a99766-e083-4cc4-8b94-67e6f4e5558e-1024x581.png",
+      "alt": "Afiche de Forever Cumbia",
+      "credit": "Fundación Teatro Nacional Sucre",
+      "source": "https://teatrosucre.com/event/forever-cumbia/"
+    },
+    "venue": "Teatro Nacional Sucre",
+    "organizer": "Fundación Teatro Nacional Sucre",
+    "sessions": [
+      {
+        "date": "2026-12-05",
+        "times": [
+          "19:00"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "paid",
+    "price": "$10 - $15",
+    "priceSource": "https://teatrosucre.com/event/forever-cumbia/",
+    "tickets": "https://tickets.teatrosucre.com/ev/forever-cumbia",
+    "website": "https://teatrosucre.com/event/forever-cumbia/",
+    "contentSource": {
+      "name": "Fundación Teatro Nacional Sucre",
+      "url": "https://teatrosucre.com/event/forever-cumbia/",
+      "checked": "2026-11-25"
+    },
+    "source": {
+      "name": "Fundación Teatro Nacional Sucre",
+      "url": "https://teatrosucre.com/",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "teatrosucre"
   }
 ]
