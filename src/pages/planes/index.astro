@@ -10,7 +10,7 @@ const plans = makePlans(await eventList());
     <div class="wrap">
       <p class="eyebrow">02 / UN DÍA, A SU RITMO</p>
       <h1>Menos «¿qué hacemos?».<br /><em>Más salir juntos.</em></h1>
-      <p>Una cita, una salida entre panas o un rato para ti. Elige un evento, deja espacio para conversar y arma el día a tu medida.</p>
+      <p>QuitoVive combina los eventos disponibles en ideas para pasar el día: una actividad por la mañana, otra por la tarde o una salida de noche. Restaurantes y cafeterías aparecen como complementos.</p>
       <div class="plan-stamps" aria-hidden="true"><span>✳ CULTURA</span><span>♡ BUENA COMPAÑÍA</span><span>↗ OTRO AIRE</span></div>
     </div>
   </section>
@@ -24,7 +24,7 @@ const plans = makePlans(await eventList());
     </form>
     <p class="budget-help">El total suma las entradas y el extra que tú elijas para comida o transporte. Los planes de precio pendiente aparecen al elegir «Sin límite».</p>
     <noscript><p>Activa JavaScript para calcular el presupuesto de tu grupo. Se muestran las entradas para dos personas.</p></noscript>
-    <div class="results-head"><h2>Elige cómo pasar el día</h2><p id="plan-count" aria-live="polite"></p></div>
+    <div class="results-head"><h2>Planes sugeridos para ti</h2><p id="plan-count" aria-live="polite"></p></div>
     <p id="plan-empty" class="empty" hidden>Por ahora no hay planes para esa fecha o presupuesto. Prueba con otra combinación.</p>
     <div class="plan-grid">{plans.map(plan => <PlanCard plan={plan} />)}</div>
     {!plans.length && <p class="empty">Estamos esperando nuevas fechas publicadas para armar la próxima selección.</p>}
@@ -47,13 +47,13 @@ const plans = makePlans(await eventList());
       const extras = Math.max(0, Math.min(1000, Number(extra.value) || 0));
       let count = 0;
       for (const card of cards) {
-        const next = availablePlanTime(card.dataset.date!, card.dataset.times!.split(','));
+        const start = card.dataset.times!.split(',')[0];
+        const next = availablePlanTime(card.dataset.date!, [start]);
         const cost = card.dataset.cost === '' ? undefined : Number(card.dataset.cost);
         card.hidden = !next
           || (!!date.value && date.value !== card.dataset.date)
           || (budget.value !== 'all' && !planFits(cost, extras, Number(people.value), Number(budget.value)));
         if (!card.hidden) count++;
-        if (next) card.querySelector('[data-plan-time]')!.textContent = next;
         card.querySelector('[data-plan-total]')!.textContent = cost === undefined ? 'Consultar entrada'
           : `USD ${((cost + extras) * Number(people.value)).toFixed(2)} para ${people.value}`;
       }
@@ -67,3 +67,4 @@ const plans = makePlans(await eventList());
     form.addEventListener('reset', () => queueMicrotask(update));
   });
 </script>
+
