@@ -12,7 +12,3 @@ export async function eventList() {
   return (await getCollection('events')).sort((a, b) =>
     orderedSessions(a)[0].date.localeCompare(orderedSessions(b)[0].date));
 }
-
-export async function postList() {
-  return (await getCollection('posts')).sort((a, b) => b.data.date.localeCompare(a.data.date));
-}

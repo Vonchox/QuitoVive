@@ -39,7 +39,8 @@
       "name": "Quito Informa · Aniversario del Teatro Sucre",
       "url": "https://quitoinforma.quito.gob.ec/2026/11/06/vamos-todos-a-celebrar-los-140-anos-del-teatro-nacional-sucre/",
       "checked": "2026-11-08"
-    }
+    },
+    "priceAmount": 15
   },
   {
     "id": "tejidos-y-tramas",
@@ -313,7 +314,8 @@
       "name": "Museo de la Ciudad · Agenda de noviembre",
       "url": "https://fundacionmuseosquito.gob.ec/Agendas%20PDF/2026/Noviembre/mdc_agenda_nov_compressed.pdf",
       "checked": "2026-11-08"
-    }
+    },
+    "priceAmount": 8
   },
   {
     "id": "equis",
@@ -448,6 +450,402 @@
       "name": "Ecuador Chequea · Agenda municipal de noviembre",
       "url": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/",
       "checked": "2026-11-08"
-    }
+    },
+    "priceAmount": 4
+  },
+  {
+    "id": "visitquito-evt-2026-0277",
+    "title": "Desfile Chulla Vida",
+    "category": "Patrimonio",
+    "summary": "Desfile cultural y festivo en el sector de Solanda.",
+    "venue": "Solanda",
+    "organizer": "Consultar organizador en la fuente",
+    "sessions": [
+      {
+        "date": "2026-11-25",
+        "times": [
+          "17:00"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "free",
+    "accessNote": "Gratis",
+    "tickets": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/",
+    "source": {
+      "name": "Visit Quito · Agenda de eventos",
+      "url": "https://visitquito.ec/es/eventos/",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "visitquito",
+    "priceAmount": 0,
+    "priceSource": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/"
+  },
+  {
+    "id": "visitquito-evt-2026-0278",
+    "title": "La Torera",
+    "category": "Escena",
+    "summary": "Presentación escénica en el Teatro Variedades.",
+    "venue": "Teatro Variedades Ernesto Albán",
+    "organizer": "Consultar organizador en la fuente",
+    "sessions": [
+      {
+        "date": "2026-11-26",
+        "times": [
+          "19:00"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "paid",
+    "accessNote": "USD 10",
+    "tickets": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/",
+    "source": {
+      "name": "Visit Quito · Agenda de eventos",
+      "url": "https://visitquito.ec/es/eventos/",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "visitquito",
+    "price": "USD 10",
+    "priceAmount": 10,
+    "priceSource": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/"
+  },
+  {
+    "id": "visitquito-evt-2026-0279",
+    "title": "Resonancia 8.0",
+    "category": "Arte",
+    "summary": "Encuentro artístico y cultural en el Centro Cultural Metropolitano.",
+    "venue": "Centro Cultural Metropolitano",
+    "organizer": "Consultar organizador en la fuente",
+    "sessions": [
+      {
+        "date": "2026-11-27",
+        "times": [
+          "17:00"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "free",
+    "accessNote": "Gratis",
+    "tickets": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/",
+    "source": {
+      "name": "Visit Quito · Agenda de eventos",
+      "url": "https://visitquito.ec/es/eventos/",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "visitquito",
+    "priceAmount": 0,
+    "priceSource": "https://ecuadorchequea.com/que-actividades-puedes-hacer-en-quito-en-noviembre/"
+  },
+  {
+    "id": "visitquito-evt-2026-0280",
+    "title": "Coro Vozandes 2026: Voces y Recuerdos",
+    "category": "Música",
+    "summary": "Concierto coral de Vozandes 2026.",
+    "venue": "Teatro Nacional Sucre",
+    "organizer": "Consultar organizador en la fuente",
+    "sessions": [
+      {
+        "date": "2026-11-27",
+        "times": [
+          "18:30"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "unknown",
+    "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
+    "tickets": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos/",
+    "source": {
+      "name": "Visit Quito · Agenda de eventos",
+      "url": "https://visitquito.ec/es/eventos/",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "visitquito"
+  },
+  {
+    "id": "visitquito-evt-2026-0283",
+    "title": "Coro Vozandes 2026: Voces y Recuerdos – segunda función",
+    "category": "Música",
+    "summary": "Segunda función del concierto coral Vozandes 2026.",
+    "venue": "Teatro Nacional Sucre",
+    "organizer": "Consultar organizador en la fuente",
+    "sessions": [
+      {
+        "date": "2026-11-28",
+        "times": [
+          "18:00"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "unknown",
+    "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
+    "tickets": "https://teatrosucre.com/event/coro-vozandes-2026-voces-y-recuerdos/",
+    "source": {
+      "name": "Visit Quito · Agenda de eventos",
+      "url": "https://visitquito.ec/es/eventos/",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "visitquito"
+  },
+  {
+    "id": "visitquito-evt-2026-0282",
+    "title": "KAPO",
+    "category": "Música",
+    "summary": "llega a Ecuador con su Afro Rosa Tour. Una nueva emoción para que que disfrutemos juntos en este 2026.",
+    "venue": "Coliseo Rumiñahui",
+    "organizer": "Consultar organizador en la fuente",
+    "sessions": [
+      {
+        "date": "2026-11-28",
+        "times": []
+      }
+    ],
+    "artists": [],
+    "access": "unknown",
+    "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
+    "tickets": "https://www.ticketshow.com.ec/evento/KAPO-EN-QUITO-2026",
+    "source": {
+      "name": "Visit Quito · Agenda de eventos",
+      "url": "https://visitquito.ec/es/eventos/",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "visitquito"
+  },
+  {
+    "id": "visitquito-evt-2026-0285",
+    "title": "El Chulla Concierto",
+    "category": "Música",
+    "summary": "Concierto especial por las celebraciones de Quito.",
+    "venue": "Casa de la Música",
+    "organizer": "Consultar organizador en la fuente",
+    "sessions": [
+      {
+        "date": "2026-12-04",
+        "times": [
+          "20:00"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "unknown",
+    "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
+    "tickets": "https://www.casadelamusica.ec/programacion/",
+    "source": {
+      "name": "Visit Quito · Agenda de eventos",
+      "url": "https://visitquito.ec/es/eventos/",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "visitquito"
+  },
+  {
+    "id": "visitquito-evt-2026-0300",
+    "title": "ENTRE MURALES Y SABORES",
+    "category": "Arte",
+    "summary": "ENTRE MURALES Y SABORES",
+    "venue": "Sur de Quito",
+    "organizer": "Consultar organizador en la fuente",
+    "sessions": [
+      {
+        "date": "2026-12-05",
+        "times": [
+          "08:50"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "unknown",
+    "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
+    "tickets": "https://pasaporte.visitquito.ec/go/tku74vce",
+    "source": {
+      "name": "Visit Quito · Agenda de eventos",
+      "url": "https://visitquito.ec/es/eventos/",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "visitquito"
+  },
+  {
+    "id": "visitquito-evt-2026-0290",
+    "title": "Chulla Vibra Fest",
+    "category": "Música",
+    "summary": "Festival musical programado en Sky Domo por las celebraciones de Quito.",
+    "venue": "Sky Domo",
+    "organizer": "Consultar organizador en la fuente",
+    "sessions": [
+      {
+        "date": "2026-12-05",
+        "times": []
+      }
+    ],
+    "artists": [],
+    "access": "unknown",
+    "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
+    "tickets": "https://www.quitobohemio.com/eventos",
+    "source": {
+      "name": "Visit Quito · Agenda de eventos",
+      "url": "https://visitquito.ec/es/eventos/",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "visitquito"
+  },
+  {
+    "id": "visitquito-evt-2026-0292",
+    "title": "Chulla Rock Fest / El Tri – Adicto al Rocanrol",
+    "category": "Música",
+    "summary": "Concierto de El Tri en Quito como parte de su gira Adicto al Rocanrol.",
+    "venue": "Plaza de Toros Quito",
+    "organizer": "Consultar organizador en la fuente",
+    "sessions": [
+      {
+        "date": "2026-12-12",
+        "times": [
+          "19:00"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "unknown",
+    "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
+    "tickets": "https://www.buenplan.com.ec/event/eltri-2026-quito",
+    "source": {
+      "name": "Visit Quito · Agenda de eventos",
+      "url": "https://visitquito.ec/es/eventos/",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "visitquito"
+  },
+  {
+    "id": "visitquito-evt-2026-0295",
+    "title": "El Cascanueces – primera función",
+    "category": "Escena",
+    "summary": "Primera función de El Cascanueces en Casa de la Música.",
+    "venue": "Casa de la Música",
+    "organizer": "Consultar organizador en la fuente",
+    "sessions": [
+      {
+        "date": "2026-12-16",
+        "times": [
+          "19:30"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "unknown",
+    "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
+    "tickets": "https://www.casadelamusica.ec/programacion/",
+    "source": {
+      "name": "Visit Quito · Agenda de eventos",
+      "url": "https://visitquito.ec/es/eventos/",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "visitquito"
+  },
+  {
+    "id": "visitquito-evt-2026-0296",
+    "title": "El Cascanueces – segunda función",
+    "category": "Escena",
+    "summary": "Segunda función de El Cascanueces en Casa de la Música.",
+    "venue": "Casa de la Música",
+    "organizer": "Consultar organizador en la fuente",
+    "sessions": [
+      {
+        "date": "2026-12-17",
+        "times": [
+          "19:30"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "unknown",
+    "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
+    "tickets": "https://www.casadelamusica.ec/programacion/",
+    "source": {
+      "name": "Visit Quito · Agenda de eventos",
+      "url": "https://visitquito.ec/es/eventos/",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "visitquito"
+  },
+  {
+    "id": "visitquito-evt-2026-0297",
+    "title": "El Cascanueces – tercera función",
+    "category": "Escena",
+    "summary": "Tercera función de El Cascanueces en Casa de la Música.",
+    "venue": "Casa de la Música",
+    "organizer": "Consultar organizador en la fuente",
+    "sessions": [
+      {
+        "date": "2026-12-18",
+        "times": [
+          "19:30"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "unknown",
+    "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
+    "tickets": "https://www.casadelamusica.ec/programacion/",
+    "source": {
+      "name": "Visit Quito · Agenda de eventos",
+      "url": "https://visitquito.ec/es/eventos/",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "visitquito"
+  },
+  {
+    "id": "visitquito-evt-2026-0298",
+    "title": "El Cascanueces – cuarta función",
+    "category": "Escena",
+    "summary": "Cuarta función de El Cascanueces en Casa de la Música.",
+    "venue": "Casa de la Música",
+    "organizer": "Consultar organizador en la fuente",
+    "sessions": [
+      {
+        "date": "2026-12-19",
+        "times": [
+          "18:30"
+        ]
+      }
+    ],
+    "artists": [],
+    "access": "unknown",
+    "accessNote": "Consulta precios, edad de ingreso y disponibilidad en la publicación original.",
+    "tickets": "https://www.casadelamusica.ec/programacion/",
+    "source": {
+      "name": "Visit Quito · Agenda de eventos",
+      "url": "https://visitquito.ec/es/eventos/",
+      "checked": "2026-11-25"
+    },
+    "status": "scheduled",
+    "featured": false,
+    "imported": "visitquito"
   }
 ]

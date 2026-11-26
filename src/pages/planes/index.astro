@@ -1,0 +1,69 @@
+---
+import Shell from '../../layouts/Shell.astro';
+import PlanCard from '../../components/PlanCard.astro';
+import { eventList } from '../../lib/catalog';
+import { makePlans } from '../../lib/plans.mjs';
+const plans = makePlans(await eventList());
+---
+<Shell title="Planes chill en Quito · Arma tu día | QuitoVive" active="planes" description="Planes para una cita o una salida tranquila en Quito. Elige eventos por fecha y adapta el presupuesto a tu grupo.">
+  <section class="page-head plans-head">
+    <div class="wrap">
+      <p class="eyebrow">02 / UN DÍA, A SU RITMO</p>
+      <h1>Menos «¿qué hacemos?».<br /><em>Más salir juntos.</em></h1>
+      <p>Una cita, una salida entre panas o un rato para ti. Elige un evento, deja espacio para conversar y arma el día a tu medida.</p>
+      <div class="plan-stamps" aria-hidden="true"><span>✳ CULTURA</span><span>♡ BUENA COMPAÑÍA</span><span>↗ OTRO AIRE</span></div>
+    </div>
+  </section>
+  <section class="wrap section agenda-section">
+    <form id="plan-filters" class="filters plan-filters" hidden>
+      <label>Personas<select name="personas"><option value="1">Solo yo</option><option value="2" selected>2 personas</option><option value="3">3 personas</option><option value="4">4 personas</option></select></label>
+      <label>Presupuesto del grupo<select name="presupuesto"><option value="all">Sin límite</option><option value="0">Gratis</option><option value="10">Hasta USD 10</option><option value="20">Hasta USD 20</option><option value="40">Hasta USD 40</option></select></label>
+      <label>Extra por persona (USD)<input type="number" name="extra" min="0" max="1000" step="0.5" value="0" /></label>
+      <label>Fecha<input type="date" name="dia" /></label>
+      <button type="reset" class="clear">Limpiar filtros</button>
+    </form>
+    <p class="budget-help">El total suma las entradas y el extra que tú elijas para comida o transporte. Los planes de precio pendiente aparecen al elegir «Sin límite».</p>
+    <noscript><p>Activa JavaScript para calcular el presupuesto de tu grupo. Se muestran las entradas para dos personas.</p></noscript>
+    <div class="results-head"><h2>Elige cómo pasar el día</h2><p id="plan-count" aria-live="polite"></p></div>
+    <p id="plan-empty" class="empty" hidden>Por ahora no hay planes para esa fecha o presupuesto. Prueba con otra combinación.</p>
+    <div class="plan-grid">{plans.map(plan => <PlanCard plan={plan} />)}</div>
+    {!plans.length && <p class="empty">Estamos esperando nuevas fechas publicadas para armar la próxima selección.</p>}
+  </section>
+</Shell>
+<script>
+  import { todayInQuito } from '../../lib/dates.mjs';
+  import { planFits, availablePlanTime } from '../../lib/plans.mjs';
+  document.addEventListener('astro:page-load', () => {
+    const form = document.querySelector<HTMLFormElement>('#plan-filters');
+    if (!form) return;
+    const cards = [...document.querySelectorAll<HTMLElement>('[data-plan]')];
+    const people = form.querySelector<HTMLSelectElement>('[name=personas]')!;
+    const budget = form.querySelector<HTMLSelectElement>('[name=presupuesto]')!;
+    const extra = form.querySelector<HTMLInputElement>('[name=extra]')!;
+    const date = form.querySelector<HTMLInputElement>('[name=dia]')!;
+    const today = todayInQuito();
+    date.min = today;
+    function update() {
+      const extras = Math.max(0, Math.min(1000, Number(extra.value) || 0));
+      let count = 0;
+      for (const card of cards) {
+        const next = availablePlanTime(card.dataset.date!, card.dataset.times!.split(','));
+        const cost = card.dataset.cost === '' ? undefined : Number(card.dataset.cost);
+        card.hidden = !next
+          || (!!date.value && date.value !== card.dataset.date)
+          || (budget.value !== 'all' && !planFits(cost, extras, Number(people.value), Number(budget.value)));
+        if (!card.hidden) count++;
+        if (next) card.querySelector('[data-plan-time]')!.textContent = next;
+        card.querySelector('[data-plan-total]')!.textContent = cost === undefined ? 'Consultar entrada'
+          : `USD ${((cost + extras) * Number(people.value)).toFixed(2)} para ${people.value}`;
+      }
+      document.querySelector('#plan-count')!.textContent = `${count} planes`;
+      document.querySelector<HTMLElement>('#plan-empty')!.hidden = count > 0;
+    }
+    form.hidden = false;
+    update();
+    form.addEventListener('input', update);
+    form.addEventListener('submit', event => event.preventDefault());
+    form.addEventListener('reset', () => queueMicrotask(update));
+  });
+</script>

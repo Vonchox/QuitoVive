@@ -1,6 +1,7 @@
 ---
 import { sitePath } from '../lib/paths';
 import '../styles/global.css';
+import { ClientRouter } from 'astro:transitions';
 const { title, description = 'Descubre eventos culturales, artistas y espacios de Quito.', active } = Astro.props;
 const canonical = Astro.site && new URL(Astro.url.pathname, Astro.site);
 ---
@@ -16,6 +17,7 @@ const canonical = Astro.site && new URL(Astro.url.pathname, Astro.site);
     {canonical && <link rel="canonical" href={canonical} />}
     <link rel="icon" href={sitePath('marca.svg')} type="image/svg+xml" />
     <title>{title}</title>
+    <ClientRouter />
   </head>
   <body>
     <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -25,18 +27,21 @@ const canonical = Astro.site && new URL(Astro.url.pathname, Astro.site);
         <a class="brand" href={sitePath('')} aria-label="QuitoVive, inicio"><img src={sitePath('marca.svg')} width="29" height="29" alt="" /> Quito<span>Vive</span></a>
         <nav aria-label="Principal">
           <a href={sitePath('agenda/')} aria-current={active === 'agenda' ? 'page' : undefined}>Agenda</a>
-          <a href={sitePath('blog/')} aria-current={active === 'blog' ? 'page' : undefined}>Blog</a>
+          <a href={sitePath('planes/')} aria-current={active === 'planes' ? 'page' : undefined}>Planes</a>
         </nav>
         <a class="button nav-cta" href={sitePath('agenda/?fecha=finde')}>Planes del finde <span aria-hidden="true">↗</span></a>
       </div>
     </header>
-    <main id="contenido"><slot /></main>
+    <main id="contenido" transition:name="contenido" transition:animate="slide"><slot /></main>
     <footer class="site-footer">
       <div class="wrap footer-inner">
         <div><a class="brand" href={sitePath('')}><img src={sitePath('marca.svg')} width="29" height="29" alt="" /> Quito<span>Vive</span></a><p>Cultura a la vuelta de la esquina.</p></div>
-        <nav aria-label="Pie de página"><a href={sitePath('agenda/')}>Agenda</a><a href={sitePath('blog/')}>Blog</a><a href={sitePath('fuentes/')}>Fuentes</a></nav>
+        <nav aria-label="Pie de página"><a href={sitePath('agenda/')}>Agenda</a><a href={sitePath('planes/')}>Planes</a><a href={sitePath('fuentes/')}>Fuentes</a></nav>
         <small>HECHO PARA QUITO, ECUADOR <span aria-hidden="true">✳</span></small>
       </div>
     </footer>
   </body>
 </html>
+<script>
+  import '../scripts/motion';
+</script>

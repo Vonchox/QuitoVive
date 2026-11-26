@@ -1,0 +1,29 @@
+---
+import Poster from './Poster.astro';
+import { sitePath } from '../lib/paths';
+import { formatDate } from '../lib/dates.mjs';
+const { plan, hidden = false } = Astro.props;
+const { event, date, time, cost, title, description } = plan;
+const info = event.data;
+---
+<article class="event-card plan-card" hidden={hidden} data-plan data-date={date} data-times={plan.times.join(',')} data-cost={cost ?? ''}>
+  <a class="card-link plan-cover" href={sitePath(`agenda/${event.id}/`)} aria-label={`Ver evento ${info.title}`}>
+    <Poster art={info.category} />
+    <span class="plan-cover-label">{info.category} <span aria-hidden="true">↗</span></span>
+  </a>
+  <div class="card-body">
+    <div class="card-meta"><time datetime={date}>{formatDate(date)}</time><span>PARA COMPARTIR</span></div>
+    <h2>{title}</h2>
+    <p>{description}</p>
+    <ol class="itinerary">
+      <li><span class="step-number">01</span><div><strong>Un rato antes</strong><p>Encuéntrense en {info.venue}. Lleguen con margen para el ingreso.</p></div></li>
+      <li><span class="step-number">02</span><div><strong><time data-plan-time>{time}</time> · El plan cultural</strong><a href={sitePath(`agenda/${event.id}/`)}>{info.title} ↗</a></div></li>
+      <li><span class="step-number">03</span><div><strong>Al salir, a su ritmo</strong><p>Una pausa para conversar o comer algo cerca, según las ganas y el presupuesto.</p></div></li>
+    </ol>
+    <div class="plan-cost">
+      <span>{cost === undefined ? 'Entrada por confirmar' : cost === 0 ? 'Entrada gratis' : `Entrada USD ${cost.toFixed(2)} / persona`}</span>
+      <strong data-plan-total>{cost === undefined ? 'Consultar' : `USD ${(cost * 2).toFixed(2)} para 2`}</strong>
+    </div>
+    <p class="plan-footnote">La hora corresponde al inicio del evento. Comida y transporte se presupuestan aparte.</p>
+  </div>
+</article>

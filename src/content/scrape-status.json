@@ -1,0 +1,20 @@
+{
+  "lastAttempt": "2026-11-25",
+  "lastSuccess": "2026-11-25",
+  "status": "ok",
+  "source": "https://visitquito.ec/es/eventos/",
+  "discovered": 24,
+  "accepted": 15,
+  "skipped": [
+    "evt-2026-0281",
+    "evt-2026-0284",
+    "evt-2026-0286",
+    "evt-2026-0287",
+    "evt-2026-0288",
+    "evt-2026-0289",
+    "evt-2026-0291",
+    "evt-2026-0294",
+    "evt-2026-0299"
+  ],
+  "warnings": []
+}

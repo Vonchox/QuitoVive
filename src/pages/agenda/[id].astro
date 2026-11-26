@@ -30,12 +30,12 @@ const sessions = orderedSessions(event);
       <dl>
         <dt>Lugar</dt><dd>{info.venue} · Quito <a class="text-link" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(info.venue + ', Quito')}`}>Cómo llegar ↗</a></dd>
         <dt>Organiza</dt><dd>{info.organizer}</dd>
-        <dt>Entrada</dt><dd>{info.price ?? accessLabel[info.access]}{info.accessNote && <p>{info.accessNote}</p>}</dd>
+        <dt>Entrada</dt><dd>{info.price ?? accessLabel[info.access]}{info.accessNote && <p>{info.accessNote}</p>}{info.priceSource && <a class="text-link" href={info.priceSource}>Fuente del precio ↗</a>}</dd>
         <dt>Aforo</dt><dd>{info.capacity ? `${info.capacity} personas` : 'Aforo no publicado'}</dd>
         {info.accessibility && <><dt>Accesibilidad</dt><dd>{info.accessibility}</dd></>}
       </dl>
       {info.tickets && info.status === 'scheduled' && <a class="button" href={info.tickets}>Consultar entradas <span aria-hidden="true">↗</span></a>}
-      <p class="source-note"><a class="text-link" href={info.source.url}>{info.source.name} ↗</a><small>Verificado el <time datetime={info.source.checked}>{formatDate(info.source.checked)}</time>.</small></p>
+      <p class="source-note"><a class="text-link" href={info.source.url}>{info.source.name} ↗</a><small>{info.imported ? 'Consultado automáticamente' : 'Revisado editorialmente'} el <time datetime={info.source.checked}>{formatDate(info.source.checked)}</time>.</small></p>
     </aside>
   </div>
 </Shell>

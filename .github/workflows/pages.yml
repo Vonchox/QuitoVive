@@ -7,11 +7,14 @@ on:
       - 'src/**'
       - 'public/**'
       - 'test/**'
+      - 'scripts/**'
       - 'astro.config.mjs'
       - 'tsconfig.json'
       - 'package*.json'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
+  schedule:
+    - cron: '17 12 * * 4'
 
 permissions:
   contents: read
@@ -23,10 +26,12 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: false
+          persist-credentials: true
       - uses: actions/setup-node@v4
         with:
           node-version: 24
@@ -34,7 +39,23 @@ jobs:
       - uses: actions/configure-pages@v5
       - run: npm ci
       - run: npm test
+      - name: Consultar agenda pública
+        if: github.event_name != 'push'
+        id: scrape
+        continue-on-error: true
+        run: npm run scrape
+      - name: Mantener el catálogo anterior si falla la fuente
+        if: steps.scrape.outcome == 'failure'
+        run: echo "::warning::La fuente falló. Se publica el último catálogo válido. Consulta Fuentes para ver la fecha de actualización."
       - run: npm run build
+      - name: Guardar catálogo validado
+        if: github.event_name != 'push'
+        run: |
+          git add src/content/events.json src/content/scrape-status.json
+          if ! git diff --cached --quiet; then
+            git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Update weekly cultural agenda"
+            git push
+          fi
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

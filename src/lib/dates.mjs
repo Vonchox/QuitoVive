@@ -10,6 +10,12 @@ export function todayInQuito(now = new Date()) {
   return [parts.year, parts.month, parts.day].join('-');
 }
 
+export function timeInQuito(now = new Date()) {
+  return new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'America/Guayaquil', hour: '2-digit', minute: '2-digit', hourCycle: 'h23',
+  }).format(now);
+}
+
 export function weekend(today) {
   const saturday = new Date(today + 'T00:00:00Z');
   const day = saturday.getUTCDay();

@@ -1,6 +1,8 @@
 ---
 import Shell from '../layouts/Shell.astro';
 import { eventList } from '../lib/catalog';
+import scrape from '../content/scrape-status.json';
+import { formatDate } from '../lib/dates.mjs';
 const sources = [...new Map((await eventList()).map(({ data }) => [data.source.url, data.source])).values()];
 ---
 <Shell title="Fuentes y criterio editorial | QuitoVive">
@@ -8,7 +10,15 @@ const sources = [...new Map((await eventList()).map(({ data }) => [data.source.u
   <div class="wrap section"><div class="prose">
     <h2>Cómo seleccionamos los eventos</h2>
     <p>QuitoVive es una guía independiente. Priorizamos la programación publicada por espacios y organizadores, y también consultamos coberturas que identifican su fuente. Cada ficha enlaza al material consultado y muestra la fecha de revisión.</p>
-    <p>La agenda se actualiza de forma editorial. Para cambios de última hora, reservas y disponibilidad, consulta el enlace de la ficha. Publicamos el aforo cuando la fuente especifica la capacidad del evento.</p>
+    <p>La agenda se consulta automáticamente cada jueves por la mañana. Visit Quito aporta fechas, lugares y enlaces a los organizadores. Algunas entradas tienen precios contrastados con las tablas de programación de Ecuador Chequea. Las fichas revisadas editorialmente se conservan junto a las nuevas publicaciones.</p>
+    <div class="source-health">
+      <span>Última consulta · {formatDate(scrape.lastAttempt)}</span>
+      <span>Última actualización · {scrape.lastSuccess ? formatDate(scrape.lastSuccess) : 'Pendiente'}</span>
+      <span>{scrape.status === 'ok' ? 'Fuente consultada correctamente' : scrape.status === 'partial' ? 'Algunas fuentes no respondieron' : 'Mostramos el último catálogo disponible'}</span>
+    </div>
+    <h2>Planes y presupuestos</h2>
+    <p>Los planes proponen un encuentro antes del evento y una pausa al salir. Se calculan con fechas de la agenda y el precio publicado por persona. Puedes añadir tu propio extra para comida y transporte. Si falta el precio, el plan indica que está por confirmar.</p>
+    <p>Para cambios de última hora, reservas, condiciones de ingreso y disponibilidad, consulta el enlace de la ficha. El aforo se publica cuando la fuente especifica la capacidad del evento.</p>
     <h2>Fuentes del catálogo</h2>
     <ul>{sources.map(source => <li><a href={source.url}>{source.name} ↗</a></li>)}</ul>
   </div></div>
