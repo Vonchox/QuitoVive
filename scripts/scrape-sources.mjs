@@ -153,4 +153,3 @@ export function parseSucreEvent(html, page, checked) {
   });
   return { id: 'teatrosucre-' + new URL(page).pathname.split('/').filter(Boolean).at(-1), ...data };
 }
-
