@@ -1,6 +1,6 @@
 {
-  "lastAttempt": "2026-11-25",
-  "lastSuccess": "2026-11-25",
+  "lastAttempt": "2026-11-26",
+  "lastSuccess": "2026-11-26",
   "status": "partial",
   "source": "https://visitquito.ec/es/eventos/",
   "sources": [
@@ -9,8 +9,8 @@
       "name": "Visit Quito",
       "url": "https://visitquito.ec/es/eventos/",
       "status": "ok",
-      "count": 15,
-      "lastSuccess": "2026-11-25"
+      "count": 14,
+      "lastSuccess": "2026-11-26"
     },
     {
       "id": "casamusica",
@@ -18,7 +18,7 @@
       "url": "https://www.casadelamusica.ec/programacion",
       "status": "ok",
       "count": 11,
-      "lastSuccess": "2026-11-25"
+      "lastSuccess": "2026-11-26"
     },
     {
       "id": "teatrosucre",
@@ -29,7 +29,7 @@
       "lastSuccess": "2026-11-25"
     }
   ],
-  "discovered": 26,
+  "discovered": 25,
   "withImages": 19,
   "withDescriptions": 17,
   "warnings": [

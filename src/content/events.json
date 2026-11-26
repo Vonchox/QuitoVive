@@ -569,7 +569,7 @@
     "source": {
       "name": "Visit Quito · Agenda de eventos",
       "url": "https://visitquito.ec/es/eventos/",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "status": "scheduled",
     "featured": false,
@@ -700,7 +700,7 @@
     "source": {
       "name": "Visit Quito · Agenda de eventos",
       "url": "https://visitquito.ec/es/eventos/",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "status": "scheduled",
     "featured": false,
@@ -729,7 +729,7 @@
     "source": {
       "name": "Casa de la Música · Programación",
       "url": "https://www.casadelamusica.ec/programacion",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "status": "scheduled",
     "featured": false,
@@ -750,7 +750,7 @@
     "contentSource": {
       "name": "Casa de la Música",
       "url": "https://www.casadelamusica.ec/programacion/el-chulla-concierto-2026",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "upstreamIds": [
       "casamusica-el-chulla-concierto-2026"
@@ -765,7 +765,7 @@
     "organizer": "Por confirmar",
     "sessions": [
       {
-        "date": "2026-12-05",
+        "date": "2026-12-06",
         "times": [
           "08:50"
         ]
@@ -777,7 +777,7 @@
     "source": {
       "name": "Visit Quito · Agenda de eventos",
       "url": "https://visitquito.ec/es/eventos/",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "status": "scheduled",
     "featured": false,
@@ -804,7 +804,7 @@
     "source": {
       "name": "Visit Quito · Agenda de eventos",
       "url": "https://visitquito.ec/es/eventos/",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "status": "scheduled",
     "featured": false,
@@ -833,7 +833,7 @@
     "source": {
       "name": "Visit Quito · Agenda de eventos",
       "url": "https://visitquito.ec/es/eventos/",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "status": "scheduled",
     "featured": false,
@@ -865,7 +865,7 @@
     "source": {
       "name": "Casa de la Música · Programación",
       "url": "https://www.casadelamusica.ec/programacion",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "status": "scheduled",
     "featured": false,
@@ -887,7 +887,7 @@
     "contentSource": {
       "name": "Casa de la Música",
       "url": "https://www.casadelamusica.ec/programacion/1funcionelcascanueces2026",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "upstreamIds": [
       "casamusica-1funcionelcascanueces2026"
@@ -915,7 +915,7 @@
     "source": {
       "name": "Casa de la Música · Programación",
       "url": "https://www.casadelamusica.ec/programacion",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "status": "scheduled",
     "featured": false,
@@ -937,7 +937,7 @@
     "contentSource": {
       "name": "Casa de la Música",
       "url": "https://www.casadelamusica.ec/programacion/2funcionelcascanueces2026",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "upstreamIds": [
       "casamusica-2funcionelcascanueces2026"
@@ -965,7 +965,7 @@
     "source": {
       "name": "Casa de la Música · Programación",
       "url": "https://www.casadelamusica.ec/programacion",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "status": "scheduled",
     "featured": false,
@@ -987,7 +987,7 @@
     "contentSource": {
       "name": "Casa de la Música",
       "url": "https://www.casadelamusica.ec/programacion/3funcionelcascanueces2026",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "upstreamIds": [
       "casamusica-3funcionelcascanueces2026"
@@ -1015,7 +1015,7 @@
     "source": {
       "name": "Casa de la Música · Programación",
       "url": "https://www.casadelamusica.ec/programacion",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "status": "scheduled",
     "featured": false,
@@ -1037,7 +1037,7 @@
     "contentSource": {
       "name": "Casa de la Música",
       "url": "https://www.casadelamusica.ec/programacion/4funcionelcascanueces2026",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "upstreamIds": [
       "casamusica-4funcionelcascanueces2026"
@@ -1077,12 +1077,12 @@
     "contentSource": {
       "name": "Casa de la Música",
       "url": "https://www.casadelamusica.ec/programacion/noche-de-velitas-la-sonora-dinamita-2026",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "source": {
       "name": "Casa de la Música · Programación",
       "url": "https://www.casadelamusica.ec/programacion",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "status": "scheduled",
     "featured": false,
@@ -1114,19 +1114,19 @@
     ],
     "artists": [],
     "access": "paid",
-    "price": "Valor butaca baja $40 y butaca alta $30 + $1,75 de tarifa de servicio (se aplica a todas las formas de pago). PREVENTA HASTA EL 6 DE DICIEMBRE: CON TU DINERS OBTÉN EL 10% DE DESCUENTO *No aplica descuento sobre descuento",
+    "price": "Valor butaca baja $40 y butaca alta $30 + $1,75 de tarifa de servicio (se aplica a todas las formas de pago). PREVENTA HASTA EL 6 DE DICIEMBRE: CON TU DINERS OBTÉN EL 15% DE DESCUENTO *No aplica descuento sobre descuento",
     "priceSource": "https://www.casadelamusica.ec/programacion/concierto-de-navidad-2026",
     "tickets": "https://boletos.casadelamusica.ec/ev/concierto-de-navidad",
     "website": "https://www.casadelamusica.ec/programacion/concierto-de-navidad-2026",
     "contentSource": {
       "name": "Casa de la Música",
       "url": "https://www.casadelamusica.ec/programacion/concierto-de-navidad-2026",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "source": {
       "name": "Casa de la Música · Programación",
       "url": "https://www.casadelamusica.ec/programacion",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "status": "scheduled",
     "featured": false,
@@ -1138,7 +1138,7 @@
     "category": "Música",
     "summary": "Música en vivo en la Casa de la Música.",
     "image": {
-      "url": "https://images.squarespace-cdn.com/content/v1/5477b6e0e4b07ec2525f51b0/1795024613956-RSKA8S32B94K7KR9XIDR/09-Obra-A%C3%B1o-Nuevo.jpg",
+      "url": "https://images.squarespace-cdn.com/content/v1/5477b6e0e4b07ec2525f51b0/1795727245298-MW1AZTJ555SVQ7BTA6LO/15-PROGRAMACION-CONCIERTO-A%C3%91O-NUEVO-1.jpg",
       "alt": "Afiche de Primera función: Concierto de Año Nuevo",
       "credit": "Casa de la Música",
       "source": "https://www.casadelamusica.ec/programacion/primera-funcion-concierto-de-anio-nuevo-2026"
@@ -1162,12 +1162,12 @@
     "contentSource": {
       "name": "Casa de la Música",
       "url": "https://www.casadelamusica.ec/programacion/primera-funcion-concierto-de-anio-nuevo-2026",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "source": {
       "name": "Casa de la Música · Programación",
       "url": "https://www.casadelamusica.ec/programacion",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "status": "scheduled",
     "featured": false,
@@ -1179,7 +1179,7 @@
     "category": "Música",
     "summary": "Música en vivo en la Casa de la Música.",
     "image": {
-      "url": "https://images.squarespace-cdn.com/content/v1/5477b6e0e4b07ec2525f51b0/1795024613956-RSKA8S32B94K7KR9XIDR/09-Obra-A%C3%B1o-Nuevo.jpg",
+      "url": "https://images.squarespace-cdn.com/content/v1/5477b6e0e4b07ec2525f51b0/1795727266253-YJWDM1IJJJLF0WX1QDOD/15-PROGRAMACION-CONCIERTO-A%C3%91O-NUEVO-2.jpg",
       "alt": "Afiche de Segunda función: Concierto de Año Nuevo",
       "credit": "Casa de la Música",
       "source": "https://www.casadelamusica.ec/programacion/segunda-funcion-concierto-de-anio-nuevo-2026"
@@ -1203,12 +1203,12 @@
     "contentSource": {
       "name": "Casa de la Música",
       "url": "https://www.casadelamusica.ec/programacion/segunda-funcion-concierto-de-anio-nuevo-2026",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "source": {
       "name": "Casa de la Música · Programación",
       "url": "https://www.casadelamusica.ec/programacion",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "status": "scheduled",
     "featured": false,
@@ -1245,12 +1245,12 @@
     "contentSource": {
       "name": "Casa de la Música",
       "url": "https://www.casadelamusica.ec/programacion/dominic-miller-en-ecuador",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "source": {
       "name": "Casa de la Música · Programación",
       "url": "https://www.casadelamusica.ec/programacion",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "status": "scheduled",
     "featured": false,
@@ -1290,12 +1290,12 @@
     "contentSource": {
       "name": "Casa de la Música",
       "url": "https://www.casadelamusica.ec/programacion/clase-magistral-con-dominic-miller",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "source": {
       "name": "Casa de la Música · Programación",
       "url": "https://www.casadelamusica.ec/programacion",
-      "checked": "2026-11-25"
+      "checked": "2026-11-26"
     },
     "status": "scheduled",
     "featured": false,
